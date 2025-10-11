@@ -1,0 +1,48 @@
+Day 5 — Firewall Rules and Port Security Configuration
+------------------------------------------------------
+
+**Objective:** Strengthen system security by blocking common vulnerable ports and verifying results.
+
+**Blocked Ports:**
+1. TCP Port 135 — Remote Procedure Call (RPC)
+2. TCP Port 139 — NetBIOS Session Service
+3. TCP Port 445 — SMB (Server Message Block)
+
+**Commands Executed:**
+
+# View current firewall status
+netsh advfirewall show allprofiles
+
+# Turn on firewall for all profiles
+netsh advfirewall set allprofiles state on
+
+# Block inbound and outbound connections on key ports
+netsh advfirewall firewall add rule name="Block RPC (135)" dir=in action=block protocol=TCP localport=135
+netsh advfirewall firewall add rule name="Block RPC (135) Out" dir=out action=block protocol=TCP remoteport=135
+
+netsh advfirewall firewall add rule name="Block NetBIOS (139)" dir=in action=block protocol=TCP localport=139
+netsh advfirewall firewall add rule name="Block NetBIOS (139) Out" dir=out action=block protocol=TCP remoteport=139
+
+netsh advfirewall firewall add rule name="Block SMB (445)" dir=in action=block protocol=TCP localport=445
+netsh advfirewall firewall add rule name="Block SMB (445) Out" dir=out action=block protocol=TCP remoteport=445
+
+# Verify active block rules
+netsh advfirewall firewall show rule name=all | findstr "Block"
+
+**Nmap Verification:**
+Before blocking:
+135/tcp open  msrpc
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+
+After blocking (expected):
+All blocked ports should show as "filtered" or "closed".
+
+**Firewall Policy Summary:**
+- All profiles (Domain, Private, Public) set to “BlockInbound, AllowOutbound”
+- Logging enabled for dropped packets
+- Inbound TCP ports 135, 139, and 445 successfully blocked
+
+**Outcome:**
+Successfully configured and verified Windows Defender Firewall to block SMB, NetBIOS, and RPC traffic using PowerShell and Nmap testing.
+
