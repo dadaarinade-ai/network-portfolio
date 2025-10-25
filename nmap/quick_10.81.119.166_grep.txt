@@ -1,0 +1,4 @@
+# Nmap 7.98 scan initiated Sat Oct 25 07:27:02 2025 as: "C:\\Program Files (x86)\\Nmap\\nmap.exe" -Pn --top-ports 1000 -oG quick_10.81.119.166_grep.txt 10.81.119.166
+Host: 10.81.119.166 ()	Status: Up
+Host: 10.81.119.166 ()	Ports: 53/open/tcp//domain///	Ignored State: closed (999)
+# Nmap done at Sat Oct 25 07:27:03 2025 -- 1 IP address (1 host up) scanned in 1.62 seconds
