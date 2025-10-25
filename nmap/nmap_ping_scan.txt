@@ -1,7 +1,0 @@
-# Nmap 7.98 scan initiated Sat Oct 25 07:23:42 2025 as: "C:\\Program Files (x86)\\Nmap\\nmap.exe" -sn -oN nmap_ping_scan.txt 10.81.119.0/24
-Nmap scan report for 10.81.119.166
-Host is up (0.013s latency).
-MAC Address: BA:CD:AE:1A:5A:0F (Unknown)
-Nmap scan report for 10.81.119.126
-Host is up.
-# Nmap done at Sat Oct 25 07:23:48 2025 -- 256 IP addresses (2 hosts up) scanned in 5.84 seconds

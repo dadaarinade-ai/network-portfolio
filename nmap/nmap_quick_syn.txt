@@ -1,7 +1,0 @@
-# Nmap 7.98 scan initiated Sat Oct 25 06:15:31 2025 as: "C:\\Program Files (x86)\\Nmap\\nmap.exe" -sS -Pn --top-ports 100 -oN nmap_quick_syn.txt 192.168.1.50
-Nmap scan report for 192.168.1.50
-Host is up.
-All 100 scanned ports on 192.168.1.50 are in ignored states.
-Not shown: 100 filtered tcp ports (no-response)
-
-# Nmap done at Sat Oct 25 06:15:53 2025 -- 1 IP address (1 host up) scanned in 22.19 seconds
