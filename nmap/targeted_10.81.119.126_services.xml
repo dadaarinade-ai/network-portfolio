@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///C:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.98 scan initiated Sat Oct 25 07:33:24 2025 as: &quot;C:\\Program Files (x86)\\Nmap\\nmap.exe&quot; -Pn -sV -sC -p 135,139,445 -oX targeted_10.81.119.126_services.xml 10.81.119.126 -->
+<nmaprun scanner="nmap" args="&quot;C:\\Program Files (x86)\\Nmap\\nmap.exe&quot; -Pn -sV -sC -p 135,139,445 -oX targeted_10.81.119.126_services.xml 10.81.119.126" start="1761356904" startstr="Sat Oct 25 07:33:24 2025" version="7.98" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="3" services="135,139,445"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1761356905" endtime="1761356925"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.81.119.126" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<hostscript><script id="clock-skew" output="-1s"><elem key="count">1</elem>
+<elem key="mean">-1</elem>
+<elem key="stddev">0</elem>
+<elem key="median">-1</elem>
+</script><script id="smb2-time" output="&#xa;  date: 2025-10-25T01:48:32&#xa;  start_date: N/A"><elem key="date">2025-10-25T01:48:32</elem>
+<elem key="start_date">N/A</elem>
+</script><script id="smb2-security-mode" output="&#xa;  3.1.1: &#xa;    Message signing enabled but not required"><table key="3.1.1">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script></hostscript><times srtt="109" rttvar="3031" to="100000"/>
+</host>
+<runstats><finished time="1761356925" timestr="Sat Oct 25 07:33:45 2025" summary="Nmap done at Sat Oct 25 07:33:45 2025; 1 IP address (1 host up) scanned in 21.83 seconds" elapsed="21.83" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
