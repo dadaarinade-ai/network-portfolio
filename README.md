@@ -15,6 +15,7 @@ It showcases my ability to apply practical tools and techniques in real-world se
 | **Day3_Nmap-Scan** | Focuses on host discovery and service enumeration using Nmap. |
 | **Day4_Nmap-Analysis** | Analyzes scan results, open ports, and potential vulnerabilities. |
 | **Day5_6_Firewall-Wireshark** | Involves firewall configuration, rule testing, and packet analysis using Wireshark. |
+| **IDS_Project** | creating snort ids rules to detect ICMP ping and HTTP GET requests, simulating real-world network intrustion alerts
 | **Projects** | Contains completed reports and documentation from all stages of the portfolio. |
 
 ---
@@ -51,7 +52,7 @@ Through this portfolio, I aim to:
 
 ## About Me
 
-My name is **Deborah Dada**. I hold a **Bachelor’s degree in Computer Science (CGPA: 4.03)** from **Federal University Oye Ekiti**.  
+My name is **Deborah Dada**. I hold a **Bachelorâ€™s degree in Computer Science (CGPA: 4.03)** from **Federal University Oye Ekiti**.  
 I am currently preparing to begin my **National Youth Service Corps (NYSC)** and working towards earning **professional cybersecurity certifications** to advance my career in network security.  
 
 I am passionate about technology, continuous learning, and contributing to a safer digital environment.
@@ -61,4 +62,4 @@ I am passionate about technology, continuous learning, and contributing to a saf
 
 ---
 
-> “Security is not a product, but a process.” – Bruce Schneier
+> â€œSecurity is not a product, but a process.â€ â€“ Bruce Schneier
