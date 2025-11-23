@@ -39,6 +39,10 @@ This portfolio includes examples of:
 - Project documentation and summaries
 
 ---
+## Simulation Note
+
+"The Snort IDS rules for detecting ICMP ping and HTTP GET requests were developed and tested in a Windows environment. While full live execution on Windows was limited, the expected alerts are shown in the simulated output. I am committed to mastering this setup and will deploy and validate these rules fully on a Linux environment in the near future."
+---
 
 ## Learning Objectives
 
