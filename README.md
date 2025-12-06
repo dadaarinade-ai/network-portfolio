@@ -23,8 +23,10 @@ It showcases my ability to apply practical tools and techniques in real-world se
 ## Tools and Technologies
 
 - Nmap (network scanning and auditing)  
-- Wireshark (packet capture and analysis)  
-- Firewalls (traffic filtering and rule configuration)  
+- Wireshark (packet capture and analysis)
+- Splunk (collecting, analysing and monitor data for security threats)
+- Firewalls (traffic filtering and rule configuration)
+- Snort(detect and prevent network intrusion)
 - Git and GitHub (version control and collaboration)  
 - Markdown and Word (reporting and documentation)
 
@@ -35,7 +37,9 @@ It showcases my ability to apply practical tools and techniques in real-world se
 This portfolio includes examples of:
 - Nmap scan reports  
 - Wireshark capture results  
-- Firewall rule configurations  
+- Firewall rule configurations
+- Spluck
+- Snort
 - Project documentation and summaries
 
 ---
