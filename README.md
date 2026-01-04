@@ -59,6 +59,16 @@ Through this portfolio, I aim to:
 
 ---
 
+## Certifications 
+- Certified Cybersecurity Educator professional(CCEP)
+- Introduction to Cybersecurity (Cisco)
+- Endpoint Security (Cisco)
+- Networking Basics (Cisco)
+- Networking Devices and initial Configuration (Cisco)
+- Network Defense (Cisco)
+- Cyber Threat Management (Cisco)
+- Junior Cybersecurity Analyst Career Path (Cisco)
+  
 ## About Me
 
 My name is **Deborah Dada**. I hold a **Bachelor’s degree in Computer Science (CGPA: 4.03)** from **Federal University Oye Ekiti**.  
