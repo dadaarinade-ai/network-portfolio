@@ -77,7 +77,9 @@ I am currently preparing to begin my **National Youth Service Corps (NYSC)** and
 I am passionate about technology, continuous learning, and contributing to a safer digital environment.
 
 **Email:** [dadaarinade@gmail.com](mailto:dadaarinade@gmail.com)  
+
 **GitHub:** [github.com/dadaarinade-ai](https://github.com/dadaarinade-ai)
+
 **LinkedIn:** https://www.linkedin.com/in/deborah-dada-34573038b
 ---
 
