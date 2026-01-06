@@ -81,6 +81,7 @@ I am passionate about technology, continuous learning, and contributing to a saf
 **GitHub:** [github.com/dadaarinade-ai](https://github.com/dadaarinade-ai)
 
 **LinkedIn:** https://www.linkedin.com/in/deborah-dada-34573038b
+
 ---
 
 > “Security is not a product, but a process.” – Bruce Schneier
