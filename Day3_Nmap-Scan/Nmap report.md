@@ -1,4 +1,4 @@
-# Day 3 Report — Nmap & IP Addressing
+# Nmap & IP Addressing
 
 ## Nmap Scans
 - Ran scans on my own network
