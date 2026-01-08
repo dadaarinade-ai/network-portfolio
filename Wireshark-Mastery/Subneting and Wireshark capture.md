@@ -1,4 +1,4 @@
-Day 6 — Subnetting Practice + Wireshark Capture
+Subnetting Practice + Wireshark Capture
 
 Project Title: Network Traffic Capture and Analysis
 
@@ -6,7 +6,7 @@ Objective:
 To understand basic subnetting, capture live network traffic, and analyze key packet details using Wireshark.
 
 ---
-🧩 Subnetting Practice:
+Subnetting Practice:
 - Reviewed subnetting concepts: IP address, subnet mask, network ID, broadcast address.
 - Practiced dividing a /24 network into smaller subnets (/26, /28).
 - Learned how subnetting improves IP allocation and security segmentation.
@@ -18,7 +18,7 @@ Subnets Created: 4 (each /26)
 Usable IPs per subnet: 62
 
 ---
-📡 Wireshark Traffic Capture:
+ Wireshark Traffic Capture:
 Steps performed:
 1. Opened Wireshark and selected Wi-Fi interface.
 2. Captured packets while browsing google.com and opening YouTube.
@@ -31,19 +31,16 @@ Example Observation:
 - HTTPS encrypted packets showing secure data exchange
 
 ---
-🛠 Commands Used:
+ Commands Used:
 - ipconfig /all — To check current IP configuration
 - ping 8.8.8.8 — To verify Internet connectivity
 - Wireshark — To view live network packets
 - netstat -ano — To see open connections and ports
 
 ---
-📊 Summary:
+ Summary:
 • Understood subnetting logic and IP division.
 • Captured real network traffic using Wireshark.
 • Observed DNS resolution and TCP connections.
 • Learned to identify normal vs suspicious traffic.
 
----
-Portfolio Tags:
-#Wireshark #Subnetting #NetworkAnalysis #Cybersecurity #HandsOnLearning
