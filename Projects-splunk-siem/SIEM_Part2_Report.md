@@ -1,11 +1,11 @@
-# 📊 Day 8: SIEM – Splunk Dashboard (Part 2)
+#  SIEM – Splunk Dashboard (Part 2)
 
-### 🎯 Objective
+###  Objective
 Finalize the Splunk dashboard to visualize Nmap scan data and summarize network visibility.
 
 ---
 
-### ⚙️ Dashboard Panels Created
+### Dashboard Panels Created
 | Panel | Description | Visualization |
 |--------|--------------|----------------|
 | 🟩 **Total Unique Hosts** | Counts unique hosts detected from Nmap logs | Single Value |
@@ -14,9 +14,9 @@ Finalize the Splunk dashboard to visualize Nmap scan data and summarize network 
 
 ---
 
-### 🧩 Key Queries Used
+###  Key Queries Used
 
-#### 🟩 Total Unique Hosts
+####  Total Unique Hosts
 ```splunk
 index=main "Nmap scan report for"
 | rex "Nmap scan report for (?<host>[0-9\.]+)"
@@ -31,14 +31,14 @@ index=main "open"
 | stats count by service
 | sort -count
 | head 10
-📈 Dashboard Insights
+ Dashboard Insights
 
 Found 5 open ports on localhost
 
 Common services: msrpc, microsoft-ds, http, ssl/http
 
 Dashboards visualize network exposure effectively
-💡 Key Learnings
+Key Learnings
 
 Extracted and visualized log data using Splunk regex
 
