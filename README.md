@@ -1,3 +1,17 @@
+
+<!-- Header Banner -->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=#FFC0CB&height=200&section=header&text=Dada%20Arinade&fontSize=40&fontColor=ffffff" />
+</p>
+
+<!-- Typing intro -->
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=22&pause=1000&color=39FF14&center=true&vCenter=true&width=435&lines=Cybersecurity+Enthusiast;SOC+Analyst+in+Progress;Incident+Response+%7C+Threat+Detection;Certified+%7C+Hands-on+Driven" />
+</p>
+
+
+
+
 # Network Security Analyst Portfolio
 
 Welcome to my Network Security Analyst Portfolio.  
