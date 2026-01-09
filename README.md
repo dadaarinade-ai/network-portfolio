@@ -101,3 +101,9 @@ I am passionate about technology, continuous learning, and contributing to a saf
 ---
 
 > “Security is not a product, but a process.” – Bruce Schneier
+
+
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=FFC0CB&height=200&section=footer/>
+</p>
