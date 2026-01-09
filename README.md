@@ -6,8 +6,21 @@
 
 <!-- Typing intro -->
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=22&pause=1000&color=#FFB6C1&center=true&vCenter=true&width=435&lines=Cybersecurity+Enthusiast;SOC+Analyst+in+Progress;Incident+Response+%7C+Threat+Detection;Certified+%7C+Hands-on+Driven" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=22&pause=1000&color=FFB6C1&center=true&vCenter=true&width=435&lines=Cybersecurity+Enthusiast;SOC+Analyst+in+Progress;Incident+Response+%7C+Threat+Detection;Certified+%7C+Hands-on+Driven" />
 </p>
+
+
+
+<!-- Header Banner -->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=39ff14&height=200&section=header&text=Faizan%20Shakir&fontSize=40&fontColor=ffffff" />
+</p>
+
+<!-- Typing intro -->
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=22&pause=1000&color=39FF14&center=true&vCenter=true&width=435&lines=Cybersecurity+Enthusiast;SOC+Analyst+in+Progress;Incident+Response+%7C+Threat+Detection;Certified+%7C+Hands-on+Driven" />
+</p>
+
 
 
 
