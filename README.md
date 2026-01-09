@@ -1,7 +1,7 @@
 
 <!-- Header Banner -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=#FFC0CB&height=200&section=header&text=Dada%20Arinade&fontSize=40&fontColor=ffffff" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=FFC0CB&height=200&section=header&text=Dada%20Arinade&fontSize=40&fontColor=ffffff" />
 </p>
 
 <!-- Typing intro -->
