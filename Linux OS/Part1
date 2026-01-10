@@ -1,0 +1,83 @@
+##Linux Command-Line Fundamentals
+Overview
+This project documents my hands-on learning of Linux command-line fundamentals, focusing on file system navigation and basic file operations. These skills are essential for SOC Analysts and Network Security Analysts, as most security tools, logs, and servers run on Linux-based systems.
+Through practical usage, I gained confidence navigating directories, managing files, and understanding how Linux organizes system resources.
+🔹 Commands Learned and Practical Understanding
+1. pwd – Print Working Directory
+The pwd command displays the absolute path of the current working directory.
+Purpose:
+Helps confirm the current location in the file system
+Prevents accidental execution of commands in the wrong directory
+Example:
+Copy code
+Bash
+pwd
+2. cd – Change Directory
+The cd command is used to navigate between directories.
+Common Usage:
+Copy code
+Bash
+cd logs      # Move into the logs directory
+cd ..        # Move one level up (parent directory)
+cd           # Return to home directory
+Understanding:
+cd takes the user to the home directory
+cd .. moves up one directory level, not the previous directory
+3. ls – List Directory Contents
+The ls command displays files and directories inside a location.
+Useful Options:
+Copy code
+Bash
+ls -l    # Shows detailed information (permissions, owner, size)
+ls -a    # Shows hidden files
+Security Relevance:
+Viewing file permissions and ownership helps identify access issues
+Useful when analyzing log directories such as /var/log/
+4. touch – Create Files
+The touch command creates an empty file or updates the timestamp of an existing file.
+Example:
+Copy code
+Bash
+touch alert.txt
+Use Case:
+Creating configuration files or test log files during practice
+5. rm – Remove Files and Directories
+The rm command deletes files, while rm -r removes directories recursively.
+Examples:
+Copy code
+Bash
+rm test.log        # Deletes a file
+rm -r test         # Deletes a directory and its contents
+Important Note:
+rm permanently deletes files (no recycle bin)
+Must be used carefully, especially with administrative privileges
+6. mv – Move or Rename Files
+The mv command is used to move files between directories or rename them.
+Examples:
+Copy code
+Bash
+mv old.txt new.txt           # Rename a file
+mv alerts.log /var/log/      # Move a file to another directory
+Security Context:
+Useful for organizing log files
+Often requires sudo when interacting with system directories
+⚠️ Command Safety Awareness
+I also learned the risks of destructive commands such as:
+Copy code
+Bash
+rm *
+Understanding:
+Deletes all non-hidden files in the current directory
+Does not remove directories unless combined with -r
+Reinforces the importance of confirming the working directory before executing commands
+🎯 Key Skills Gained
+Confident navigation of Linux file systems
+Safe file creation, deletion, movement, and renaming
+Awareness of permission-sensitive system directories
+Foundation for log analysis and security tool usage
+🔐 Relevance to Cybersecurity & SOC Roles
+These Linux fundamentals are critical for:
+Navigating log directories (/var/log)
+Running and managing security tools (Snort, Suricata, Splunk)
+Investigating incidents in Linux server environments
+Avoiding operational errors during incident response
