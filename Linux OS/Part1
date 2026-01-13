@@ -9,52 +9,92 @@ All commands were practiced hands-on in a Linux environment to build confidence 
 
 ## File System Navigation & Management
 
-** pwd — Print Working Directory **
+### **1. pwd — Print Working Directory**
 The pwd command displays the absolute path of the current working directory.
 Purpose:
 Confirms the exact location within the file system
 Helps prevent running commands in the wrong directory
-cd — Change Directory
+Example:
+pwd
+
+
+### **2. cd — Change Directory**
 The cd command is used to move between directories within the Linux file system.
-Examples include using cd logs to enter a directory, cd .. to move one level up to the parent directory, and cd without arguments to return to the home directory.
-Key understanding:
-cd without arguments moves to the home directory
-cd .. moves one directory level up
-ls — List Directory Contents
+Examples:
+cd dirl (logs to enter a directory)
+cd .. (to move one level up to the parent directory)
+cd (without arguments to return to the home directory)
+cd ~ ( to go home)
+cd / ( to the root)
+
+### **3. ls — List Directory Contents**
 The ls command displays files and directories within a specified location.
-Common options include ls -l for a detailed view showing permissions, ownership, file size, and timestamps, and ls -a for displaying hidden files.
+Examples
+ls folder(list out directories or file in 'folder' in short form)
+ls -l (for a detailed view showing permissions, ownership, file size, and timestamps)
+ls -a (for displaying hidden files.)
+ls -lh (human readable files)
+
 Security relevance:
 Useful for checking file ownership and permissions
 Commonly used when inspecting system and log directories
-touch — Create Files
+
+### **4. touch — Create Files**
 The touch command creates empty files or updates timestamps of existing files, such as using touch alert.txt to create a new file.
-Use case:
-Creating test files or configuration placeholders
-rm — Remove Files and Directories
-The rm command deletes files and directories from the system.
-For example, rm test.log removes a file, while rm -r test recursively removes a directory and its contents.
+Example:
+touch test.txt ( creates empty files named test.txt)
+
+### **5. rm — Remove Files and Directories**
+The rm command deletes files and directories from the system.  
+Example:
+rm test.log (removes a file named 'test.log') 
+rm -r test (recursively removes a directory named 'text' and its contents).
+rm -rf test( forcefully delete 'test')
+rm -v test ( shows details in what is being removed in 'test')
+rm -i test (it is interactive asking y/n)
+rmdir work ( remove empty directory named 'work')
+
 Important notes:
 Files removed using rm are permanently deleted
 Recursive deletion is required for directories
 Extra caution is necessary when using administrative privileges
-mv — Move or Rename Files
+
+### **6. mv — Move or Rename Files**
 The mv command is used to move files between directories or rename them.
-Examples include mv old.txt new.txt to rename a file and mv alerts.log /var/log/ to move a file into a system log directory.
+Examples: 
+mv old.txt new.txt (to rename a file)
+mv alerts.log /var/log/ (to move a file into a system log directory)
+
 Security context:
 Frequently used when organizing log files
 System directories may require elevated permissions
-⚠️ Command Safety Awareness
+
+### **7. mkdir - Make Directory**
+The command mkdir creates new directory in filesystem.
+Example:
+mkdir newfolder (creates folder named 'newfolder')
+mkdir -p folder/folder1 (created nested folders)
+
+
+## **8. cp- Copying**
+This command copies files or directories from one location to another 
+Example:
+cp source.txt destination ( copies source.txt into destination)
+cp -r folder folder_backup ( copies folder content into folder_backup)
+
+
+---
+
+## Command Safety Awareness
 I developed awareness of potentially destructive commands such as rm *.
-Key understanding:
-Removes all non-hidden files in the current directory
-Does not remove directories unless used with the recursive option
-Reinforces the importance of verifying the working directory before execution
-🧠 Skills Developed
+
+### Skills Developed
 Confident navigation of Linux file systems
 Safe creation, deletion, movement, and renaming of files
 Basic understanding of directory structures and permissions
 Improved command-line accuracy and caution
-🔐 Relevance to Cybersecurity & SOC Roles
+
+### Relevance to Cybersecurity & SOC Roles
 These Linux fundamentals are essential for:
 Navigating log directories such as /var/log
 Running and managing Linux-based security tools
