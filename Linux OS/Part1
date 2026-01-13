@@ -76,11 +76,20 @@ mkdir newfolder (creates folder named 'newfolder')
 mkdir -p folder/folder1 (created nested folders)
 
 
-## **8. cp- Copying**
+### **8. cp- Copying**
 This command copies files or directories from one location to another 
 Example:
 cp source.txt destination ( copies source.txt into destination)
 cp -r folder folder_backup ( copies folder content into folder_backup)
+
+### ** 9. open 
+This command is used for opening files or folders
+Example:
+open .
+open . file_name
+xdg-open .
+xdg-open file_name
+
 
 
 ---
