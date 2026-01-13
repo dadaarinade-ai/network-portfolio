@@ -1,0 +1,215 @@
+## Linux Command-Line Fundamentals (SOC & Network Security Focus)
+
+This section documents my hands-on learning of essential Linux commands commonly used by SOC Analysts, Network Security Analysts, and system administrators. These commands are fundamental for log analysis, file handling, system navigation, and incident investigation in Linux-based environments.
+
+---
+
+### **1. `echo`**
+
+**Purpose:** Displays text or variables to the terminal. Commonly used for quick messages, scripting, and writing data into files.
+
+**Example:**
+
+```bash
+echo "SOC Analyst in training"
+```
+
+Appending text to a file:
+
+```bash
+echo "Failed login from 192.168.1.10" >> logs.txt
+```
+
+---
+
+### **2. `wc` (Word Count)**
+
+**Purpose:** Counts lines, words, and bytes in a file. Very useful for analyzing log file size and activity volume.
+
+**Examples:**
+
+```bash
+wc access.log
+```
+
+Counts lines, words, and bytes.
+
+```bash
+wc -l access.log
+```
+
+Counts only the number of lines (commonly used in SOC log analysis).
+
+---
+
+### **3. `sort`**
+
+**Purpose:** Sorts lines of text alphabetically or numerically. Useful for organizing IP addresses, usernames, or events.
+
+**Examples:**
+
+```bash
+sort ips.txt
+```
+
+Save sorted output to a file:
+
+```bash
+sort ips.txt > sorted_ips.txt
+```
+
+---
+
+### **4. `clear`**
+
+**Purpose:** Clears the terminal screen for better visibility.
+
+**Example:**
+
+```bash
+clear
+```
+
+---
+
+### **5. `exit`**
+
+**Purpose:** Closes the terminal session or exits a shell.
+
+**Example:**
+
+```bash
+exit
+```
+
+---
+
+### **6. `whoami`**
+
+**Purpose:** Displays the currently logged-in user. Useful for privilege verification during investigations.
+
+**Example:**
+
+```bash
+whoami
+```
+
+Redirect output to a file:
+
+```bash
+whoami > user.txt
+```
+
+---
+
+### **7. `man`**
+
+**Purpose:** Opens the manual pages for Linux commands. Essential for learning command options and flags.
+
+**Example:**
+
+```bash
+man wc
+```
+
+---
+
+### **8. `touch`**
+
+**Purpose:** Creates an empty file or updates a file's timestamp. Often used to quickly create log or config files.
+
+**Example:**
+
+```bash
+touch logs.txt
+```
+
+---
+
+### **9. `less`**
+
+**Purpose:** Views file content page by page. Preferred for large log files.
+
+**Example:**
+
+```bash
+less access.log
+```
+
+---
+
+### **10. Output Redirection (`>` and `>>`)**
+
+**Purpose:** Redirects command output into files.
+
+* `>` overwrites existing content
+* `>>` appends to existing content
+
+**Examples:**
+
+```bash
+echo "Test log" > logs.txt
+```
+
+```bash
+echo "New alert detected" >> logs.txt
+```
+
+---
+
+### **11. `cat`**
+
+**Purpose:** Displays the contents of a file. Best for small files.
+
+**Example:**
+
+```bash
+cat logs.txt
+```
+
+---
+
+### **12. `head`**
+
+**Purpose:** Displays the first lines of a file. Useful for checking log headers.
+
+**Example:**
+
+```bash
+head -n 5 access.log
+```
+
+---
+
+### **13. `tail`**
+
+**Purpose:** Displays the last lines of a file. Very important in SOC work for monitoring recent events.
+
+**Examples:**
+
+```bash
+tail -n 10 access.log
+```
+
+Append last 5 log entries to another file:
+
+```bash
+tail -n 5 access.log >> logs.txt
+```
+
+---
+
+## 🎯 Why This Matters for SOC & Network Security
+
+These commands form the foundation for:
+
+* Linux log analysis
+* Incident investigation
+* System monitoring
+* Security automation and scripting
+
+Mastery of these tools enables efficient navigation of Linux systems commonly used in SOC environments, SIEM backends, servers, and security appliances.
+
+---
+
+**Status:** Practiced hands-on in a Linux environment (Parrot OS)
