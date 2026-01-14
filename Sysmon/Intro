@@ -1,1 +1,101 @@
 
+Sysmon (System Monitor)
+
+Sysmon is a Windows system service that provides enhanced security logging beyond default Windows Event Logs.
+It is widely used by SOC analysts for monitoring process execution, network activity, and system changes.
+
+
+---
+
+Downloading Sysmon
+
+Sysmon was downloaded manually using a web browser from the official Microsoft Sysinternals website.
+
+Steps followed:
+
+Opened a web browser
+
+Navigated to the Microsoft Sysinternals Sysmon download page
+
+Downloaded Sysmon64.exe for a 64-bit Windows system
+
+Saved the file locally (e.g., C:\Sysmon)
+
+
+
+---
+
+Installing Sysmon
+
+Sysmon was installed using Administrator privileges.
+
+Sysmon64.exe -i sysmonconfig.xml
+
+This command:
+
+Installed Sysmon as a Windows service
+
+Applied the XML configuration file
+
+Began logging security events immediately
+
+
+
+---
+
+Configuring Sysmon
+
+Sysmon configuration was done using an XML configuration file to control what events are logged and reduce noise.
+
+The configuration enabled logging for:
+
+Process creation
+
+Network connections
+
+File creation
+
+Registry modifications
+
+DNS queries
+
+
+Configuration updates were applied without reinstalling Sysmon:
+
+Sysmon64.exe -c sysmonconfig.xml
+
+
+---
+
+Key Sysmon Event IDs
+
+Event ID	Description
+
+1	Process creation
+3	Network connection
+11	File creation
+13	Registry modification
+22	DNS query
+
+
+
+---
+
+Log Location
+
+Sysmon events are stored in:
+
+Event Viewer →
+Applications and Services Logs →
+Microsoft →
+Windows →
+Sysmon →
+Operational
+
+
+---
+
+SOC Relevance
+
+Sysmon provides high-quality telemetry used for threat detection, incident investigation, and SIEM monitoring.
+
