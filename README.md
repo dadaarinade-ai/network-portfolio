@@ -26,13 +26,16 @@ It showcases my ability to apply practical tools and techniques in real-world se
 
 | Folder | Description |
 |:--|:--|
-| **Day1_Intro-to-Networks** | Covers the basics of networking, IP addressing, and subnetting. |
-| **Day2_OSI-Network-Scanning** | Introduces the OSI model and practical network scanning concepts. |
-| **Day3_Nmap-Scan** | Focuses on host discovery and service enumeration using Nmap. |
-| **Day4_Nmap-Analysis** | Analyzes scan results, open ports, and potential vulnerabilities. |
-| **Day5_6_Firewall-Wireshark** | Involves firewall configuration, rule testing, and packet analysis using Wireshark. |
-| **IDS_Project** | creating snort ids rules to detect ICMP ping and HTTP GET requests, simulating real-world network intrustion alerts
-| **Projects** | Contains completed reports and documentation from all stages of the portfolio. |
+| **Firewall** | Covers firewall fundamentals, including traffic filtering concepts, firewall types, rule creation, and basic packet-filtering behavior in a network. |
+| **IDS_project** | Focuses on Intrusion Detection Systems (IDS), including how IDS tools like Snort works, alert generation, and detection of suspicious network activities.|
+| **Linux CLI** | Lean into Linux command-line fundamentals for security analysis, including file navigation, process monitoring, log analysis, and basic networking commands.|
+| **Projects-splunk-siem** | Focuses on ingesting logs into Splunk, creating dashboards, searching security events, and analyzing alerts in a SIEM environment.|
+| **Sysmon** | Covers Sysmon installation and configuration, monitoring detailed Windows endpoint activity such as process creation, network connections, and file changes.|
+| **Windows event viewer** | Focuses on analyzing Windows logs (Security, System, Application), understanding Event IDs, and detecting suspicious authentication and system activities.|
+| **Wireshark-Mastery** |  Focus on packet capture and traffic analysis using Wireshark, including protocol analysis, filtering, and identifying malicious network behavior.|
+| **nmap** |  Focuses on network scanning using Nmap, including host discovery, port scanning, service/version detection, and basic vulnerability identification.|
+| **reports** |  Contains written reports documenting findings, analysis, screenshots, and conclusions from labs, projects, and security investigations.|
+| **MITRE ATTACK** | Focuses on mapping observed attacker behaviors and techniques to the MITRE ATT&CK framework for structured threat analysis and reporting.|
 
 ---
 
@@ -45,6 +48,7 @@ It showcases my ability to apply practical tools and techniques in real-world se
 - Snort(detect and prevent network intrusion)
 - Git and GitHub (version control and collaboration)  
 - Markdown and Word (reporting and documentation)
+  
 
 ---
 
