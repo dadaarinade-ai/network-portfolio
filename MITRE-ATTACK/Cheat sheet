@@ -1,0 +1,274 @@
+
+
+MITRE ATT&CK Cheat Sheet (SOC Analyst L1)
+
+What is MITRE ATT&CK?
+
+MITRE ATT&CK is a globally used framework that documents real-world attacker behaviors.
+It helps security teams detect, investigate, and respond to cyber attacks by mapping observed activities to known attacker tactics and techniques.
+
+
+---
+
+Core Concepts
+
+Tactic → Why the attacker is performing an action (goal)
+
+Technique → How the attacker achieves that goal
+
+Sub-technique → Specific implementation of a technique
+
+
+
+---
+
+MITRE ATT&CK Tactics Overview
+
+1. Reconnaissance
+
+Goal: Gather information about the target
+Examples:
+
+Network scanning
+
+Identifying users, services, and public assets
+
+
+
+---
+
+2. Resource Development
+
+Goal: Prepare attack infrastructure
+Examples:
+
+Creating phishing domains
+
+Acquiring malware tools
+
+
+
+---
+
+3. Initial Access
+
+Goal: Gain entry into the system
+Common Techniques:
+
+Phishing
+
+Exploiting public-facing applications
+
+Valid account abuse
+
+
+
+---
+
+4. Execution
+
+Goal: Run malicious code
+Common Techniques:
+
+PowerShell execution
+
+Command-line execution
+
+Scheduled tasks
+
+
+
+---
+
+5. Persistence
+
+Goal: Maintain access after reboot or logout
+Common Techniques:
+
+Registry run keys
+
+Startup folder abuse
+
+Creating new user accounts
+
+
+
+---
+
+6. Privilege Escalation
+
+Goal: Gain higher-level permissions
+Common Techniques:
+
+Exploiting misconfigurations
+
+Token impersonation
+
+Abuse of admin privileges
+
+
+
+---
+
+7. Defense Evasion
+
+Goal: Avoid detection by security controls
+Common Techniques:
+
+Disabling antivirus
+
+Obfuscated scripts
+
+Clearing event logs
+
+
+
+---
+
+8. Credential Access
+
+Goal: Steal usernames and passwords
+Common Techniques:
+
+Credential dumping
+
+Keylogging
+
+LSASS memory access
+
+
+
+---
+
+9. Discovery
+
+Goal: Understand the environment
+Common Techniques:
+
+Network discovery
+
+Account discovery
+
+Service enumeration
+
+
+
+---
+10. Lateral Movement
+
+Goal: Move to other systems in the network
+Common Techniques:
+
+Pass-the-Hash
+
+Remote services (SMB, RDP)
+
+
+
+---
+
+11. Collection
+
+Goal: Gather sensitive data
+Common Techniques:
+
+Screen capture
+
+File search
+
+Email collection
+
+
+
+---
+
+12. Command and Control (C2)
+
+Goal: Communicate with attacker-controlled servers
+Common Techniques:
+
+HTTP/HTTPS beaconing
+
+DNS tunneling
+
+
+
+---
+
+13. Exfiltration
+
+Goal: Send stolen data out of the network
+Common Techniques:
+
+Exfiltration over C2 channel
+
+Cloud storage abuse
+
+
+
+---
+
+14. Impact
+
+Goal: Disrupt, damage, or extort
+Common Techniques:
+
+Data encryption (ransomware)
+
+Data destruction
+
+Account lockout
+
+
+
+---
+
+MITRE ATT&CK in SOC Operations
+
+How SOC Analysts Use MITRE ATT&CK:-
+
+-Map SIEM alerts to attacker techniques
+
+-Understand attacker intent and stage
+
+-Prioritize incidents based on attack progression
+
+Improve detection and threat hunting
+
+
+
+---
+
+Example Alert Mapping
+
+Activity Observed	MITRE ATT&CK Mapping
+
+Suspicious email attachment	Initial Access – Phishing
+PowerShell spawned silently	Execution – PowerShell
+Defender service disabled	Defense Evasion
+Credentials dumped	Credential Access
+Data sent externally	Exfiltration
+
+
+
+---
+
+Why MITRE ATT&CK Matters
+
+Standardizes threat detection language
+
+Improves incident response clarity
+
+Helps predict attacker next steps
+
+Widely used by SOC teams, SIEMs, and EDR tools
+
+
+
+---
+
+Summary
+
+> MITRE ATT&CK provides a structured way to understand, detect, and respond to cyber attacks by mapping observed activity to real-world attacker tactics and techniques.
+
+
