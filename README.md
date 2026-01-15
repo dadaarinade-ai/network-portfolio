@@ -30,8 +30,7 @@ It showcases my ability to apply practical tools and techniques in real-world se
 | **IDS_project** | Focuses on Intrusion Detection Systems (IDS), including how IDS tools like Snort works, alert generation, and detection of suspicious network activities.|
 | **Linux CLI** | Lean into Linux command-line fundamentals for security analysis, including file navigation, process monitoring, log analysis, and basic networking commands.|
 | **Projects-splunk-siem** | Focuses on ingesting logs into Splunk, creating dashboards, searching security events, and analyzing alerts in a SIEM environment.|
-| **Sysmon** | Covers Sysmon installation and configuration, monitoring detailed Windows endpoint activity such as process creation, network connections, and file changes.|
-| **Windows event viewer** | Focuses on analyzing Windows logs (Security, System, Application), understanding Event IDs, and detecting suspicious authentication and system activities.|
+| **Windows event viewer + Sysmon** | Focuses on analyzing Windows logs (Security, System, Application), understanding Event IDs, and detecting suspicious authentication and system activities and also covers Sysmon installation and configuration, monitoring detailed Windows endpoint activity such as process creation, network connections, and file changes..|
 | **Wireshark-Mastery** |  Focus on packet capture and traffic analysis using Wireshark, including protocol analysis, filtering, and identifying malicious network behavior.|
 | **nmap** |  Focuses on network scanning using Nmap, including host discovery, port scanning, service/version detection, and basic vulnerability identification.|
 | **reports** |  Contains written reports documenting findings, analysis, screenshots, and conclusions from labs, projects, and security investigations.|
