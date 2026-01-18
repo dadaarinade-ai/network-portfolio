@@ -1,0 +1,179 @@
+Splunk Security Lab Setup and Installed Components
+
+Overview
+
+This project documents the installation and configuration of Splunk Enterprise and its essential supporting components to create a functional Security Operations Center (SOC)–ready log analysis environment.
+The goal of this setup is to enable effective log collection, monitoring, and basic security analysis, aligned with the responsibilities of a SOC Level 1 Analyst.
+
+The environment was deployed on a Linux-based system (Parrot OS in a virtual machine) and configured to ingest logs from both Linux and Windows systems, which reflects real enterprise security monitoring scenarios.
+
+---
+
+1. Splunk Enterprise Installation
+
+Splunk Enterprise was installed as the core Security Information and Event Management (SIEM) platform.
+
+Purpose
+
+- Centralized log collection and storage
+- Event searching and correlation
+- Alerting and basic threat detection
+- Security monitoring and investigation
+
+Key Features Enabled
+
+- Web interface for log analysis
+- Indexing of incoming security events
+- Support for add-ons and forwarders
+- Listening service for log ingestion on port 9997
+
+---
+
+2. Required Linux System Utilities
+
+Before and after installing Splunk, essential Linux utilities were installed to support Splunk’s operation and maintenance.
+
+Installed Utilities
+
+- wget / curl – Used to download Splunk packages and add-ons
+- tar / unzip – Used to extract Splunk and add-on files
+- net-tools – Used to verify network ports and connectivity
+- system update tools – Ensured system stability and compatibility
+
+Importance
+
+These tools are necessary for:
+
+- Managing Splunk packages
+- Verifying that Splunk services and ports are running correctly
+- Performing troubleshooting tasks common in SOC environments
+
+---
+
+3. Splunk Add-on for Unix and Linux
+
+The Splunk Add-on for Unix and Linux was installed to enable native Linux log ingestion.
+
+Logs Collected
+
+- Authentication logs ("/var/log/auth.log")
+- System logs ("/var/log/syslog")
+- Process and service activity
+- CPU, memory, and disk usage
+
+Security Value
+
+This add-on allows Splunk to:
+
+- Detect failed login attempts
+- Monitor privilege escalation attempts
+- Identify abnormal system behavior
+- Provide visibility into Linux host activity
+
+This is critical because Linux servers are widely used in enterprise environments and cloud infrastructure.
+
+---
+
+4. Splunk Add-on for Windows
+
+The Splunk Add-on for Windows was installed to support Windows event log ingestion.
+
+Logs Supported
+
+- Security Event Logs
+- System Event Logs
+- Application Logs
+- PowerShell activity
+- Account logon and logoff events
+
+Security Value
+
+This add-on enables:
+
+- Detection of brute-force login attempts
+- Monitoring of suspicious PowerShell usage
+- Visibility into user and system activity on Windows machines
+
+Although Splunk runs on Linux, monitoring Windows endpoints is a core SOC responsibility, making this add-on essential.
+
+---
+
+5. Splunk Universal Forwarder
+
+The Splunk Universal Forwarder was installed to enable log forwarding from endpoint systems to the Splunk server.
+
+Purpose
+
+- Secure and efficient log transmission
+- Lightweight agent for endpoints
+- Real-time forwarding of logs
+
+Configuration
+
+- Forwarder configured to send logs to the Splunk server on port 9997
+- Receiving port enabled on the Splunk server
+- Forwarder tested to confirm successful log ingestion
+
+Importance
+
+In real SOC environments:
+
+- Logs are not generated on the SIEM itself
+- Forwarders are used to collect logs from multiple systems
+- Understanding forwarders is a key SOC analyst skill
+
+---
+
+6. Network and Traffic Analysis Tools
+
+Additional tools were installed to generate and analyze network-related data that can be ingested into Splunk.
+
+Installed Tools
+
+- tcpdump – Captures network traffic for analysis
+- Wireshark – Deep packet inspection and PCAP analysis
+- Nmap – Network scanning and service discovery
+
+Security Value
+
+These tools allow:
+
+- Generation of realistic security data
+- Analysis of suspicious network activity
+- Correlation of network behavior with logs inside Splunk
+
+---
+
+7. Log Receiving and Data Ingestion Configuration
+
+Splunk was configured to actively receive logs from external systems.
+
+Key Configuration
+
+- Enabled Splunk listening service on port 9997
+- Verified data ingestion from Linux and Windows sources
+- Confirmed logs are searchable through the Splunk Search Processing Language (SPL)
+
+This step ensures Splunk functions as a centralized SIEM, not just a standalone application.
+
+---
+
+8. Outcome and Skills Demonstrated
+
+Through this setup, the following SOC-relevant skills were demonstrated:
+
+- Installing and configuring Splunk Enterprise
+- Managing Splunk add-ons for Linux and Windows
+- Setting up and using Universal Forwarders
+- Understanding log sources and event ingestion
+- Performing basic security log analysis
+- Preparing a SIEM environment aligned with SOC Level 1 responsibilities
+
+---
+
+Conclusion
+
+This Splunk setup provides a solid, realistic foundation for SOC Level 1 operations.
+Rather than installing unnecessary tools, the focus was placed on core components required for effective log ingestion, monitoring, and investigation.
+
+This environment reflects how Splunk is used in real-world SOC teams and serves as a practical, job-ready security lab for continuous learning and improvement.
