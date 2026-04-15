@@ -1,0 +1,87 @@
+# Week 1 — Secure Network Lab Project
+
+## 📌 Overview
+This project demonstrates the setup of a basic cybersecurity lab using virtualization, and compares insecure vs secure network designs. The goal is to understand network segmentation, exposure risks, and safe lab architecture for cybersecurity practice.
+
+---
+
+## 🧪 Tools Used
+- Kali Linux (Attacker Machine)
+- Windows 10 (Target Machine)
+- VirtualBox (Virtualization Platform)
+
+---
+
+## 🖥️ Lab Setup
+
+Two virtual machines were created:
+- Kali Linux VM
+- Windows 10 VM
+
+Both machines were configured inside VirtualBox to simulate real-world network environments for cybersecurity testing.
+
+---
+
+## ⚠️ Insecure Network Design
+
+### ❌ Characteristics
+- Both systems are on the same network (LAN)
+- No isolation between attacker and target
+- Direct access to internal services
+- Weak or misconfigured firewall exposure
+- High attack surface
+
+### 🚨 Risks
+- Easy port scanning and enumeration
+- Unauthorized access via exposed services (SMB, RDP, HTTP)
+- Lateral movement across network devices
+- Increased vulnerability to internal attacks
+
+---
+
+## 🛡️ Secure Network Design
+
+### ✅ Characteristics
+- Isolated host-only virtual network
+- No direct exposure to external internet
+- Controlled communication between VMs only
+- Safe environment for penetration testing
+
+### 🔐 Security Benefits
+- Reduced attack surface
+- Contained exploitation environment
+- Simulates enterprise network segmentation
+- Prevents external network interference
+
+---
+
+## 🔴 Insecure Network Risks Summary
+In an insecure network, both attacker and target machines share the same network without segmentation. This allows attackers to easily discover and exploit services on the target system. Once a single system is compromised, lateral movement across the network becomes possible, increasing the impact of an attack.
+
+---
+
+## 🟢 Secure Network Benefits Summary
+A secure network design isolates virtual machines within a controlled environment. This prevents exposure to real-world networks and ensures all testing remains contained. It also introduces proper network segmentation, which is a key principle in enterprise cybersecurity architecture.
+
+---
+
+## 📊 Key Learning Outcomes
+- Understanding network segmentation
+- Difference between secure and insecure architectures
+- Basics of lab setup using virtualization
+- Introduction to cybersecurity lab documentation
+- Awareness of attack surface exposure
+
+---
+
+## 📁 Project Status
+✔ Completed Week 1 Lab Setup  
+✔ Designed insecure network model  
+✔ Designed secure network model  
+✔ Created network diagrams  
+✔ Documented risk analysis  
+
+---
+
+## 🚀 Next Step
+Week 2 will focus on Linux misconfigurations, privilege escalation, and system hardening.
