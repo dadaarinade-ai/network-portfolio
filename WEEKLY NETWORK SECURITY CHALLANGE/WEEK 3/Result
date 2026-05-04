@@ -1,1 +1,105 @@
 
+bash-5.1$ ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:cb:65:ff brd ff:ff:ff:ff:ff:ff
+3: enp0s8: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:0e:a8:22 brd ff:ff:ff:ff:ff:ff
+4: enp0s9: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:1d:9d:74 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.56.103/24 brd 192.168.56.255 scope global dynamic noprefixroute enp0s9
+       valid_lft 586sec preferred_lft 586sec
+    inet6 fe80::d845:39ba:74fd:46bb/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+bash-5.1$ nmap -sn 192.168.56.104
+Starting Nmap 7.93 ( https://nmap.org ) at 2026-04-22 11:53 EDT
+Nmap scan report for 192.168.56.104
+Host is up (0.044s latency).
+Nmap done: 1 IP address (1 host up) scanned in 13.07 seconds
+bash-5.1$ nmap -sS -sV -O 192.168.56.104
+You requested a scan type which requires root privileges.
+QUITTING!
+bash-5.1$  
+
+bash-5.1$ sudo nmap -sS -sV -O 192.168.56.104
+[sudo] password for quinari: 
+Starting Nmap 7.93 ( https://nmap.org ) at 2026-04-23 05:36 EDT
+Nmap scan report for 192.168.56.104
+Host is up (0.00056s latency).
+Not shown: 996 closed tcp ports (reset)
+PORT     STATE SERVICE       VERSION
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+5357/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+MAC Address: 08:00:27:05:1D:47 (Oracle VirtualBox virtual NIC)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.93%E=4%D=4/23%OT=135%CT=1%CU=41201%PV=Y%DS=1%DC=D%G=Y%M=080027%
+OS:TM=69E9E850%P=x86_64-pc-linux-gnu)SEQ(SP=105%GCD=1%ISR=106%TI=I%CI=I%II=
+OS:I%SS=S%TS=U)OPS(O1=M5B4NW8NNS%O2=M5B4NW8NNS%O3=M5B4NW8%O4=M5B4NW8NNS%O5=
+OS:M5B4NW8NNS%O6=M5B4NNS)WIN(W1=FFFF%W2=FFFF%W3=FFFF%W4=FFFF%W5=FFFF%W6=FF7
+OS:0)ECN(R=Y%DF=Y%T=80%W=FFFF%O=M5B4NW8NNS%CC=N%Q=)T1(R=Y%DF=Y%T=80%S=O%A=S
+OS:+%F=AS%RD=0%Q=)T2(R=Y%DF=Y%T=80%W=0%S=Z%A=S%F=AR%O=%RD=0%Q=)T3(R=Y%DF=Y%
+OS:T=80%W=0%S=Z%A=O%F=AR%O=%RD=0%Q=)T4(R=Y%DF=Y%T=80%W=0%S=A%A=O%F=R%O=%RD=
+OS:0%Q=)T5(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=80%W=0%
+OS:S=A%A=O%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(
+OS:R=Y%DF=N%T=80%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=
+OS:N%T=80%CD=Z)
+
+Network Distance: 1 hop
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 42.23 seconds
+bash-5.1$ sudo nmap -sS -sV -O 192.168.56.104
+
+bash-5.1$ smbclient -L //192.168.56.104
+Password for [WORKGROUP\quinari]:
+
+	Sharename       Type      Comment
+	---------       ----      -------
+	ADMIN$          Disk      Remote Admin
+	C$              Disk      Default share
+	IPC$            IPC       Remote IPC
+SMB1 disabled -- no workgroup available
+bash-5.1$ enum4linux 192.168.56.104
+Starting enum4linux v0.8.9 ( http://labs.portcullis.co.uk/application/enum4linux/ ) on Thu Apr 23 10:56:19 2026
+
+ ========================== 
+|    Target Information    |
+ ========================== 
+Target ........... 192.168.56.104
+RID Range ........ 500-550,1000-1050
+Username ......... ''
+Password ......... ''
+Known Usernames .. administrator, guest, krbtgt, domain admins, root, bin, none
+
+
+ ====================================================== 
+|    Enumerating Workgroup/Domain on 192.168.56.104    |
+ ====================================================== 
+[+] Got domain/workgroup name: WORKGROUP
+
+ ============================================== 
+|    Nbtstat Information for 192.168.56.104    |
+ ============================================== 
+Looking up status of 192.168.56.104
+	DESKTOP-TANV3L4 <20> -         B <ACTIVE>  File Server Service
+	DESKTOP-TANV3L4 <00> -         B <ACTIVE>  Workstation Service
+	WORKGROUP       <00> - <GROUP> B <ACTIVE>  Domain/Workgroup Name
+
+	MAC Address = 08-00-27-05-1D-47
+
+ ======================================= 
+|    Session Check on 192.168.56.104    |
+ ======================================= 
+[E] Server doesn't allow session using username '', password ''.  Aborting remainder of tests.
+bash-5.1$ 
+
+
