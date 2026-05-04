@@ -1,0 +1,180 @@
+# 🔐 Week 3 — Network Attack Surface Mapping
+
+## 📌 Project Overview
+
+This project focuses on identifying and analyzing the attack surface of a virtual lab network. The goal is to understand how attackers discover entry points and assess potential risks within a network environment.
+
+---
+
+## 🧱 Lab Setup
+
+* **Attacker Machine:** Kali Linux
+* **Target Machine:** Windows
+* **Network Type:** Host-only network
+* **Network Range:** 192.168.56.0/24
+
+---
+
+## 🌐 Network Mapping
+
+### 🔍 IP Address Identification
+
+**Kali Linux:**
+
+```bash
+ip a
+```
+
+* IP Address: **192.168.56.103**
+
+**Windows Target:**
+
+```bash
+ipconfig
+```
+
+* IP Address: **192.168.56.104**
+
+---
+
+### 🔎 Host Discovery
+
+```bash
+nmap -sn 192.168.56.104
+```
+
+**Result:**
+
+* Host is **UP**
+* Network communication confirmed
+
+---
+
+## 🚨 Port Scanning & Service Detection
+
+```bash
+sudo nmap -sS -sV -O 192.168.56.104
+```
+
+### 📊 Scan Results
+
+| Port | State | Service | Description                |
+| ---- | ----- | ------- | -------------------------- |
+| 135  | Open  | MSRPC   | Remote procedure calls     |
+| 139  | Open  | NetBIOS | File sharing & system info |
+| 445  | Open  | SMB     | File sharing service       |
+| 5357 | Open  | HTTP    | Microsoft HTTP API         |
+
+---
+
+## 🔍 SMB Enumeration
+
+### 📌 Share Enumeration
+
+```bash
+smbclient -L //192.168.56.104
+```
+
+**Discovered Shares:**
+
+* ADMIN$
+* C$
+* IPC$
+
+---
+
+### 📌 Detailed Enumeration
+
+```bash
+enum4linux 192.168.56.104
+```
+
+**Findings:**
+
+* Hostname: **DESKTOP-TANV3L4**
+* Workgroup: **WORKGROUP**
+* SMB service is active
+* Null session access is **disabled**
+
+---
+
+## ⚠️ Attack Surface Analysis
+
+The target system exposes multiple services that increase its attack surface:
+
+### 🔴 High Risk
+
+* **Port 445 (SMB):**
+
+  * Primary attack vector
+  * Can be exploited for remote code execution
+  * Administrative shares available upon authentication
+
+### 🟠 Medium Risk
+
+* **Port 139 (NetBIOS):**
+
+  * Allows system and network information disclosure
+
+* **Port 135 (MSRPC):**
+
+  * Enables remote service interaction and enumeration
+
+### 🟡 Low–Medium Risk
+
+* **Port 5357 (HTTP API):**
+
+  * May expose additional services or device information
+
+---
+
+## 🎯 Attack Surface Summary
+
+| Component     | Risk Level | Description                       |
+| ------------- | ---------- | --------------------------------- |
+| SMB (445)     | High 🔥    | Main entry point for exploitation |
+| NetBIOS (139) | Medium     | Information gathering             |
+| RPC (135)     | Medium     | Service interaction               |
+| HTTP (5357)   | Low–Medium | Web-based exposure                |
+
+---
+
+## 🧩 Attack Surface Diagram
+
+```
+[ Kali Linux - 192.168.56.103 ]
+            |
+            | Scan / Attack
+            ↓
+[ Windows - 192.168.56.104 ]
+--------------------------------
+| 135 (RPC) → Enumeration      |
+| 139 (NetBIOS) → Info Leak    |
+| 445 (SMB) → Exploitation 🔥  |
+| 5357 (HTTP) → Web Service    |
+--------------------------------
+```
+
+---
+
+## 🧠 Key Learnings
+
+* Learned how to map a network and identify live hosts
+* Gained experience using Nmap for port scanning and service detection
+* Understood how SMB enumeration reveals critical system information
+* Identified how exposed services contribute to an attack surface
+* Developed an attacker mindset for analyzing network weaknesses
+
+---
+
+## ✅ Conclusion
+
+This project demonstrates how attackers identify entry points within a network. The presence of exposed SMB services and administrative shares highlights the importance of proper configuration and secure authentication mechanisms in preventing unauthorized access.
+
+---
+
+## 🚀 Next Steps
+
+* Attempt controlled exploitation in a safe lab environment
+* Perform vulnerability scanning on identified services
+* Strengthen system defenses and re-evaluate attack surface
