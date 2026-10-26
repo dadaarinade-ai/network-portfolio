@@ -6,7 +6,7 @@
 
 <!-- Typing intro -->
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=22&pause=1000&color=FFB6C1&center=true&vCenter=true&width=435&lines=Cybersecurity+Enthusiast;SOC+Analyst+in+Progress;Incident+Response;Threat+Detection;Certified+%7C+Hands-on+Driven" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=22&pause=1000&color=FFB6C1&center=true&vCenter=true&width=435&lines=Cybersecurity+Enthusiast;Network+Security+in+Progress;Incident+Response;Threat+Detection;Certified+%7C+Hands-on+Driven" />
 </p>
 
 
@@ -87,11 +87,12 @@ Through this portfolio, I aim to:
 - Network Defense (Cisco)
 - Cyber Threat Management (Cisco)
 - Junior Cybersecurity Analyst Career Path (Cisco)
+- CCNA(in progress)
   
 ## About Me
 
 My name is **Deborah Dada**. I hold a **Bachelor’s degree in Computer Science (CGPA: 4.03)** from **Federal University Oye Ekiti**.  
-I am currently preparing to begin my **National Youth Service Corps (NYSC)** and working towards earning **professional cybersecurity certifications** to advance my career in network security.  
+I am currently about finishing my **National Youth Service Corps (NYSC)** and working towards earning **professional cybersecurity certifications** to advance my career in network security.  
 
 I am passionate about technology, continuous learning, and contributing to a safer digital environment.
 
