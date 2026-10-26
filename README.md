@@ -6,7 +6,7 @@
 
 <!-- Typing intro -->
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=22&pause=1000&color=FFB6C1&center=true&vCenter=true&width=435&lines=Cybersecurity+Enthusiast;Network+Security+in+Progress;Incident+Response;Threat+Detection;Certified+%7C+Hands-on+Driven" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=22&pause=1000&color=FFB6C1&center=true&vCenter=true&width=435&lines=Cybersecurity+Enthusiast;Network+Security+Engineer;Incident+Response;Threat+Detection;Certified+%7C+Hands-on+Driven" />
 </p>
 
 
@@ -14,9 +14,9 @@
 
 
 
-# Network Security Analyst Portfolio
+# Network Security Engineer Portfolio
 
-Welcome to my Network Security Analyst Portfolio.  
+Welcome to my Network Security Engineer Portfolio.  
 This repository contains a collection of hands-on projects and exercises that demonstrate my progress in network security, threat detection, and network monitoring.  
 It showcases my ability to apply practical tools and techniques in real-world security analysis.
 
