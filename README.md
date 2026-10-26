@@ -17,6 +17,7 @@
 # Network Security Engineer Portfolio
 
 Welcome to my Network Security Engineer Portfolio.  
+
 This repository contains a collection of hands-on projects and exercises that demonstrate my progress in network security, threat detection, and network monitoring.  
 It showcases my ability to apply practical tools and techniques in real-world security analysis.
 
