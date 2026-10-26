@@ -18,8 +18,9 @@
 
 Welcome to my Network Security Engineer Portfolio.  
 
-This repository contains a collection of hands-on projects and exercises that demonstrate my progress in network security, threat detection, and network monitoring.  
-It showcases my ability to apply practical tools and techniques in real-world security analysis.
+This repository contains a collection of hands-on projects, practical labs, and exercises documenting my development in network security, network troubleshooting, traffic analysis, and security monitoring.
+
+It showcases my practical learning with networking and cybersecurity tools, my approach to investigating network activity, and my progress toward building, configuring, and securing network infrastructure.
 
 ---
 
@@ -36,36 +37,45 @@ It showcases my ability to apply practical tools and techniques in real-world se
 | **nmap** |  Focuses on network scanning using Nmap, including host discovery, port scanning, service/version detection, and basic vulnerability identification.|
 | **reports** |  Contains written reports documenting findings, analysis, screenshots, and conclusions from labs, projects, and security investigations.|
 | **MITRE ATTACK** | Focuses on mapping observed attacker behaviors and techniques to the MITRE ATT&CK framework for structured threat analysis and reporting.|
+**cybersecurity lab setup** | Documents cybersecurity lab setup and practical exercises involving virtual machines and networking fundamentals.|
+**WEEKLY NETWORK SECURITY CHALLANGE** | Contains structured weekly networking and security exercises designed to strengthen practical knowledge and troubleshooting skills.|
+
 
 ---
+
+Additional network engineering projects will be added as I develop and document practical skills in network configuration, subnetting, routing, switching, network segmentation, access control, and secure network architecture.
 
 ## Tools and Technologies
-
-- Nmap (network scanning and auditing)  
-- Wireshark (packet capture and analysis)
-- Splunk (collecting, analysing and monitor data for security threats)
-- Firewalls (traffic filtering and rule configuration)
-- Snort(detect and prevent network intrusion)
-- Git and GitHub (version control and collaboration)  
-- Markdown and Word (reporting and documentation)
-  
+- Nmap: Network discovery, port scanning, and service enumeration.
+- Wireshark: Packet capture, protocol inspection, and traffic analysis.
+- Splunk: Security log collection, searching, monitoring, and event analysis.
+- Firewalls: Traffic filtering, security policies, and rule configuration.
+- Snort: Network intrusion detection rules and alert analysis.
+- Linux: Command-line operations and basic network troubleshooting.
+- Windows Event Viewer and Sysmon: System and endpoint activity monitoring.
+- VirtualBox: Virtualised lab environments for networking and security practice.
+- Git and GitHub: Version control, project organisation, and technical documentation.
+- Markdown and Word: Lab reports and technical documentation
 
 ---
 
-## Sample Deliverables
+## Sample Deliverable
 
 This portfolio includes examples of:
-- Nmap scan reports  
-- Wireshark capture results  
-- Firewall rule configurations
-- Spluck
-- Snort
-- Project documentation and summaries
-
+- Nmap scan results and network discovery reports.
+- Wireshark packet captures and traffic-analysis findings.
+- Firewall rule configurations and filtering exercises.
+- Snort detection rules and IDS alert analysis.
+- Splunk searches and security monitoring exercises.
+- Windows event log and Sysmon investigations.
+- Virtual lab documentation and network troubleshooting exercises.
 ---
-## Simulation Note
 
-The Snort IDS rules for detecting ICMP ping and HTTP GET requests were developed and tested in a Windows environment. While full live execution on Windows was limited, the expected alerts are shown in the simulated output. I am committed to mastering this setup and will deploy and validate these rules fully on a Linux environment in the near future.
+## Simulation and Validation Note
+
+Some exercises include simulated or expected outputs where full live execution was not possible. In particular, the Snort rules for detecting ICMP ping and HTTP GET requests were developed as part of an IDS exercise, but full live validation in the original Windows environment was limited.
+
+Simulated results are identified as such and are not presented as verified live detections. I aim to validate these rules in a suitable Linux-based lab and update the documentation with actual results as the practical work progresses.
 
 ---
 
@@ -93,9 +103,8 @@ Through this portfolio, I aim to:
 ## About Me
 
 My name is **Deborah Dada**. I hold a **Bachelor’s degree in Computer Science (CGPA: 4.03)** from **Federal University Oye Ekiti**.  
-I am currently about finishing my **National Youth Service Corps (NYSC)** and working towards earning **professional cybersecurity certifications** to advance my career in network security.  
-
-I am passionate about technology, continuous learning, and contributing to a safer digital environment.
+I am building my career in network engineering and cybersecurity, with a particular interest in network infrastructure, secure network design, traffic analysis, firewall technologies, and troubleshooting.Also currently developing my networking foundation, preparing for CCNA, and expanding my hands-on portfolio through practical labs and documented projects.
+My long-term goal is to become a skilled Network Security Engineer capable of designing, implementing, troubleshooting, and securing network environments.
 
 **Email:** [dadaarinade@gmail.com](mailto:dadaarinade@gmail.com)  
 
