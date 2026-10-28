@@ -7,8 +7,8 @@ Network Diagram
                      |
         +------------+------------+
         |            |            |
-   Windows VM    Parrot OS    Metasploitable2
-   .104           .103          .102
+        Windows VM    Parrot OS    Metasploitable2
+        .104           .103          .102
         |            |            |
         +------------+------------+
              Host-Only Network
