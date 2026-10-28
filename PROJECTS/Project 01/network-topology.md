@@ -16,7 +16,7 @@ Network Diagram
 IP Addressing
 
 | Machine| IPv4 Address| Purpose |
-| :--|:--|
+| :--|:--|:--|
 | Windows| 192.168.56.104/24| Client and connectivity testing |
 | Parrot OS| 192.168.56.103/24| Security testing machine |
 | Metasploitable2| 192.168.56.102/24| Intentionally vulnerable target |
