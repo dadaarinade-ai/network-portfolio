@@ -276,25 +276,27 @@ Review the service configuration and perform further authorised security testing
 
 The following table provides preliminary remediation priorities based on the potential impact of the reported findings.
 
-Finding| Preliminary Priority
-vsFTPd backdoor| Critical
-UnrealIRCd backdoor indicator| High
-OpenSSL CCS Injection| High
-SSL POODLE and weak Diffie-Hellman| Medium–High
-Slowloris exposure| Medium
-Java RMI exposure| Further assessment required
+|Finding| Preliminary Priority|
+|--|--|
+|vsFTPd backdoor| Critical|
+|UnrealIRCd backdoor indicator| High|
+|OpenSSL CCS Injection| High|
+|SSL POODLE and weak Diffie-Hellman| Medium–High|
+|Slowloris exposure| Medium|
+|Java RMI exposure| Further assessment required|
 
 Risk assessment note: These are preliminary qualitative priorities, not formally calculated CVSS scores. Final severity should consider exploitability, exposure, asset importance, and validated technical evidence.
 
 6. Remediation and Verification Plan
 
-Finding| Recommended Action| Verification
-vsFTPd backdoor| Replace vulnerable software| Repeat version and vulnerability scans
-UnrealIRCd backdoor| Verify integrity and replace affected software| Repeat service and vulnerability checks
-SSL weaknesses| Strengthen TLS configuration| Repeat SSL/TLS assessment
-OpenSSL CCS Injection| Patch affected OpenSSL components| Verify version and rerun checks
-Slowloris| Apply web-server protections| Review configuration and test resilience
-Java RMI| Restrict or disable unnecessary access| Review configuration and access controls
+|Finding| Recommended Action| Verification|
+|--|--|--|
+|vsFTPd backdoor| Replace vulnerable software| Repeat version and vulnerability scans|
+|UnrealIRCd backdoor| Verify integrity and replace affected software| Repeat service and vulnerability checks|
+|SSL weaknesses| Strengthen TLS configuration| Repeat SSL/TLS assessment|
+|OpenSSL CCS Injection| Patch affected OpenSSL components| Verify version and rerun checks|
+|Slowloris| Apply web-server protections| Review configuration and test resilience|
+|Java RMI| Restrict or disable unnecessary access| Review configuration and access controls|
 
 7. Assessment Limitations
 
