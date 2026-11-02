@@ -92,13 +92,14 @@ The scan took approximately 327.94 seconds.
 
 The vulnerability scan reported several potential security weaknesses:
 
-Service| Port| Finding
-vsFTPd| 21| Backdoor associated with CVE-2011-2523
-UnrealIRCd| 6667| Backdoor indicator
-HTTP| 80| Slowloris exposure
-SMTP| 25| SSL POODLE and weak Diffie-Hellman
-PostgreSQL| 5432| SSL POODLE, weak Diffie-Hellman and OpenSSL CCS Injection
-Java RMI| 1099| Exposed RMI registry
+|Service| Port| Finding|
+|--|--|--|
+|vsFTPd| 21| Backdoor associated with CVE-2011-2523|
+|UnrealIRCd| 6667| Backdoor indicator|
+|HTTP| 80| Slowloris exposure|
+|SMTP| 25| SSL POODLE and weak Diffie-Hellman|
+|PostgreSQL| 5432| SSL POODLE, weak Diffie-Hellman and OpenSSL CCS Injection|
+|Java RMI| 1099| Exposed RMI registry|
 
 These are scan-reported findings and require appropriate validation before being treated as confirmed vulnerabilities.
 
