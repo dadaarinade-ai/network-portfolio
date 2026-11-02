@@ -1,7 +1,7 @@
 
 Vulnerability Assessment Report
 
-1. Project Overview
+1. **Project Overview**
 
 Project Title: Network Reconnaissance and Vulnerability Assessment Using Nmap
 Target: Metasploitable2
@@ -10,13 +10,13 @@ Operating System: Linux 2.6.x (Nmap OS estimate)
 Tool Used: Nmap 7.93
 Assessment Environment: Isolated VirtualBox network lab
 
-2. Objective
+2. **Objective**
 
 The objective of this assessment was to identify potential security vulnerabilities and weaknesses in the Metasploitable2 virtual machine using Nmap's vulnerability detection scripts.
 
 The assessment focused on identifying vulnerable services, outdated software, insecure configurations, and possible attack entry points.
 
-3. Methodology
+3. **Methodology**
 
 The following Nmap command was executed:
 
@@ -26,7 +26,7 @@ This command runs Nmap's vulnerability detection scripts against the target to i
 
 The scan took approximately 327.94 seconds to complete.
 
-4. Key Findings
+4. **Key Findings**
 
 The scan reported the following security issues:
 
@@ -41,7 +41,7 @@ The scan reported the following security issues:
 
 Note: These are scan-reported findings. They have not all been independently validated.
 
-5. Risk Analysis
+5. **Risk Analysis**
 
 5.1 vsFTPd Backdoor — Port 21
 
@@ -81,7 +81,7 @@ The Java RMI registry was accessible on port 1099.
 
 Potential impact: An exposed or poorly secured RMI service may provide an attacker with an additional attack surface.
 
-6. Security Recommendations
+6. **Security Recommendations**
 
 Based on the scan findings, the following security improvements are recommended:
 
@@ -93,7 +93,7 @@ Based on the scan findings, the following security improvements are recommended:
 6. Restrict service access: Use firewall rules and network segmentation to limit access to sensitive services.
 7. Validate vulnerabilities: Conduct further testing to confirm scan-reported findings.
 
-7. Conclusion
+7. **Conclusion**
 
 The Nmap vulnerability assessment identified multiple potential security weaknesses on the Metasploitable2 machine.
 
@@ -103,14 +103,14 @@ The assessment demonstrates how network reconnaissance and vulnerability scannin
 
 Regular vulnerability assessments, timely patching, secure service configurations, and network access controls are essential for reducing network security risks.
 
-8. Tools Used
+8. **Tools Used**
 
 - Parrot OS
 - Nmap 7.93
 - Metasploitable2
 - Oracle VirtualBox
 
-9. Project Scope and Authorization
+9. **Project Scope and Authorization**
 
 This assessment was conducted within a personally configured, isolated VirtualBox lab for educational and practical cybersecurity training.
 
