@@ -30,13 +30,14 @@ The scan took approximately 327.94 seconds to complete.
 
 The scan reported the following security issues:
 
-Service / Port| Finding| Potential Risk
-FTP - 21| vsFTPd 2.3.4 backdoor (CVE-2011-2523)| Remote command execution
-IRC - 6667| UnrealIRCd backdoor indicator| Possible remote command execution
-HTTP - 80| Slowloris exposure| Denial of Service
-SMTP - 25| SSL POODLE and weak Diffie-Hellman| Weaknesses in encrypted communication
-PostgreSQL - 5432| SSL POODLE, weak Diffie-Hellman and OpenSSL CCS Injection| Potential compromise of secure communication
-Java RMI - 1099| Exposed Java RMI registry| Potential remote service abuse
+|Service / Port| Finding| Potential Risk|
+|--|--|--|
+|FTP - 21| vsFTPd 2.3.4 backdoor (CVE-2011-2523)| Remote command execution|
+|IRC - 6667| UnrealIRCd backdoor indicator| Possible remote command execution|
+|HTTP - 80| Slowloris exposure| Denial of Service|
+|SMTP - 25| SSL POODLE and weak Diffie-Hellman| Weaknesses in encrypted communication|
+|PostgreSQL - 5432| SSL POODLE, weak Diffie-Hellman and OpenSSL CCS Injection| Potential compromise of secure communication|
+|Java RMI - 1099| Exposed Java RMI registry| Potential remote service abuse|
 
 Note: These are scan-reported findings. They have not all been independently validated.
 
