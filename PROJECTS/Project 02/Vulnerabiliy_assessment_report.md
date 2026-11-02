@@ -2,17 +2,17 @@
 
 |Project 02 — Network Reconnaissance and Vulnerability Assessment|
 |--|
-|**Assessment Target: Metasploitable2**|
-|**Target IP: "192.168.56.102"**|
-|**Assessment Tool: Nmap 7.93**|
-|**Assessment Date: 2 November 2026**|
-|**Environment: Isolated VirtualBox Lab**|
-|**Assessment Type: Network-Based Vulnerability Assessment**|
-|**Assessor: Arinade Dada**|
+|**Assessment Target**: Metasploitable2|
+|**Target IP**: "192.168.56.102"|
+|**Assessment Tool**: Nmap 7.93|
+|**Assessment Date**: 2 November 2026|
+|**Environment**: Isolated VirtualBox Lab|
+|**Assessment Type**: Network-Based Vulnerability Assessment|
+|**Assessor**: Arinade Dada|
 
 ---
 
-1. Executive Summary
+1. **Executive Summary**
 
 A network-based vulnerability assessment was conducted against a Metasploitable2 virtual machine using Nmap's vulnerability detection scripts.
 
@@ -24,7 +24,7 @@ These findings demonstrate how vulnerable services, outdated software, and insec
 
 Remediation and further validation are recommended.
 
-2. Assessment Scope
+2. **Assessment Scope**
 
 2.1 Target Information
 
@@ -52,7 +52,7 @@ The assessment focused on:
 
 No external systems were included in the assessment.
 
-3. Assessment Methodology
+3. **Assessment Methodology**
 
 The following Nmap command was used:
 
@@ -64,7 +64,7 @@ Scan duration: Approximately 327.94 seconds.
 
 The scan output was reviewed to identify vulnerability indicators, affected services, and supporting evidence.
 
-4. Detailed Vulnerability Findings
+4. **Detailed Vulnerability Findings**
 
 Finding 1: vsFTPd 2.3.4 Backdoor
 
