@@ -2,13 +2,13 @@ Vulnerability Assessment Report
 
 Project 02 — Network Reconnaissance and Vulnerability Assessment
 
-Assessment Target: Metasploitable2
-Target IP: "192.168.56.102"
-Assessment Tool: Nmap 7.93
-Assessment Date: 2 November 2026
-Environment: Isolated VirtualBox Lab
-Assessment Type: Network-Based Vulnerability Assessment
-Assessor: Arinade Dada
+|Assessment Target: Metasploitable2|
+|Target IP: "192.168.56.102"|
+|Assessment Tool: Nmap 7.93|
+|Assessment Date: 2 November 2026|
+|Environment: Isolated VirtualBox Lab|
+|Assessment Type: Network-Based Vulnerability Assessment|
+|Assessor: Arinade Dada|
 
 ---
 
