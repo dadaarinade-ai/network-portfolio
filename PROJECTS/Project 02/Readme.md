@@ -126,7 +126,7 @@ Screenshots documenting the assessment process are available below.
 |Open Ports| "Screenshots/VUL2.png"|
 |Service Detection| "Screenshots/VUL3.png"|
 |OS Detection| "Screenshots/VUL4.png"|
-|Vulnerability Scan| "Screenshots/VUL5.png""Screenshots/VUL6.png""Screenshots/VUL7.png""Screenshots/VUL8.png""Screenshots/VUL9.png""Screenshots/VUL10.png""Screenshots/VUL11.png""Screenshots/VUL12.png""Screenshots/VUL13.png""Screenshots/VUL14.png""Screenshots/VUL15.png""Screenshots/VUL16.png"|
+|Vulnerability Scan| "Screenshots/VUL5.png" "Screenshots/VUL6.png" "Screenshots/VUL7.png" "Screenshots/VUL8.png" "Screenshots/VUL9.png" "Screenshots/VUL10.png" "Screenshots/VUL11.png" "Screenshots/VUL12.png" "Screenshots/VUL13.png" "Screenshots/VUL14.png" "Screenshots/VUL15.png" "Screenshots/VUL16.png"|
 
 9. Skills Demonstrated
 
