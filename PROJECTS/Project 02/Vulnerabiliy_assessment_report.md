@@ -28,14 +28,15 @@ Remediation and further validation are recommended.
 
 2.1 Target Information
 
-Parameter| Details
-Target| Metasploitable2
-IP Address| 192.168.56.102
-Operating System| Linux 2.6.x (Nmap estimate)
-Network| 192.168.56.0/24
-Scanner| Parrot OS
-Scanner IP| 192.168.56.103
-Assessment Tool| Nmap 7.93
+|Parameter| Details|
+|--|--|
+|Target| Metasploitable2|
+|IP Address| 192.168.56.102|
+|Operating System| Linux 2.6.x (Nmap estimate)|
+|Network| 192.168.56.0/24|
+|Scanner| Parrot OS|
+|Scanner IP| 192.168.56.103|
+|Assessment Tool| Nmap 7.93|
 
 2.2 Assessment Boundaries
 
