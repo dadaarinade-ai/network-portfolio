@@ -3,7 +3,7 @@
 ## Project Documentation
 
 - [Network Topology](Network-Topology.md)
-- [Vulnerability Assessment Report](Vulnerability_assessment_report.md)
+- [Vulnerability Assessment Report](Vulnerabiliy_assessment_report.md)
 - [Screenshots](Screenshots/)
 
 ### 1. Project Overview
