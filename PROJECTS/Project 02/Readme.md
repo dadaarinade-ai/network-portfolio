@@ -1,5 +1,10 @@
 # Project 02: Network Reconnaissance and Vulnerability Assessment Using Nmap
 
+## Project Documentation
+
+- "Network Topology Diagram" (Network-Topology.md)
+- "Screenshots" (Screenshots/)
+
 ### 1. Project Overview
 
 This project demonstrates practical network reconnaissance, port scanning, service enumeration, operating system detection, and vulnerability assessment using Nmap.
