@@ -39,8 +39,7 @@ flowchart TB
 ### 4. Communication Flow
 
 The Parrot OS machine served as the scanning machine, while Metasploitable2 served as the assessment target.
-
-#### Communication followed this process:
+Communication followed this process:
 
 1. Parrot OS initiated network discovery within the host-only subnet.
 2. The target machine was identified at "192.168.56.102".
