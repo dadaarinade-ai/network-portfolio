@@ -1,24 +1,25 @@
-Project 01: Virtual Network Lab Setup and Connectivity Validation
+# Project 01: Virtual Network Lab Setup and Connectivity Validation
 
-Objective
+### Objective
 
 Build and validate an isolated virtual network lab to understand IP addressing, network interfaces, routing, ARP, and connectivity troubleshooting.
 
-Lab Environment
+### Lab Environment
 
 - Virtualization: Oracle VirtualBox
 - Attacker/Test Machine: Parrot OS
 - Target Machine: Metasploitable 2
 - Client Machine: Windows
 
-Network Configuration
+### Network Configuration
 
-Device| IP Address
-Parrot OS| 192.168.56.103/24
-Windows Host-Only| 192.168.56.104/24
-Metasploitable 2| 192.168.56.102
+|Device| IP Address|
+|--|--|
+|Parrot OS| 192.168.56.103/24|
+|Windows Host-Only| 192.168.56.104/24|
+|Metasploitable 2| 192.168.56.102|
 
-Practical Tasks Completed
+### Practical Tasks Completed
 
 - Verified connectivity between Windows and Parrot OS.
 - Verified connectivity between Windows and Metasploitable 2.
@@ -28,7 +29,7 @@ Practical Tasks Completed
 - Inspected neighbor entries using "ip neigh".
 - Identified the role of IP addresses, subnets, MAC addresses, and ARP.
 
-Key Findings
+### Key Findings
 
 - Devices on the same IPv4 subnet can communicate directly at Layer 2 without routing through a gateway, assuming the network and security settings permit it.
 - ARP maps local IPv4 addresses to MAC addresses.
@@ -36,7 +37,7 @@ Key Findings
 - A "STALE" neighbor entry does not necessarily indicate a connectivity failure.
 - Successful ping tests confirm ICMP reachability, not that every service or port is accessible.
 
-Troubleshooting Approach
+### Troubleshooting Approach
 
 When connectivity fails:
 
@@ -46,15 +47,15 @@ When connectivity fails:
 4. Inspect the routing table.
 5. Check firewall rules and repeat the connectivity test.
 
-Security Relevance
+### Security Relevance
 
 Isolated virtual labs provide a controlled environment for practicing network configuration, connectivity validation, and troubleshooting before working with production networks.
 
-Result
+### Result
 
 Successfully validated connectivity among the three lab machines and inspected network interfaces, routing information, and neighbor entries.
 
-Tools Used
+### Tools Used
 
 - Oracle VirtualBox
 - Windows Command Prompt
