@@ -1,6 +1,6 @@
 # Vulnerability Assessment Report
 
-|Project 02 — Network Reconnaissance and Vulnerability Assessment|
+| Project 02 — Network Reconnaissance and Vulnerability Assessment|
 |--|
 |**Assessment Target**: Metasploitable2|
 |**Target IP**: "192.168.56.102"|
