@@ -20,22 +20,19 @@ Device Information
 |Attacker Machine| Parrot OS| 192.168.56.103| Security scanning and testing|
 |Target Machine| Metasploitable2| 192.168.56.102| Vulnerability assessment target|
 
-3. Network Topology Diagram
-
-            flowchart TB
+```mermaid
+flowchart TB
     H["Physical Host Computer"]
     V["Oracle VirtualBox"]
-    N["Host-Only Network<br/>192.168.56.0/24"]
-
-    P["Parrot OS<br/>192.168.56.103<br/>Nmap Scanner"]
-    M["Metasploitable2<br/>192.168.56.102<br/>Assessment Target"]
-
-    H --- V
-    V --- N
+    N["Host-Only Network\n192.168.56.0/24"]
+    P["Parrot OS\n192.168.56.103\nNmap Scanner"]
+    M["Metasploitable2\n192.168.56.102\nAssessment Target"]
+    H --> V
+    V --> N
     N --- P
     N --- M
-
-    P -->|"Nmap scans"| M
+    P -->|Nmap scans| M
+```
 
 4. Communication Flow
 
