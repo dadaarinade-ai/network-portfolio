@@ -20,6 +20,8 @@ Device Information
 |Attacker Machine| Parrot OS| 192.168.56.103| Security scanning and testing|
 |Target Machine| Metasploitable2| 192.168.56.102| Vulnerability assessment target|
 
+
+3. Network Topology Diagram
 ```mermaid
 flowchart TB
     H["Physical Host Computer"]
