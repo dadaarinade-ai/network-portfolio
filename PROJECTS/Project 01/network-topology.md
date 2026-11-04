@@ -37,6 +37,6 @@ flowchart TB
 - Windows to Metasploitable2: Successful
 - Parrot OS to Metasploitable2: Successful, 0% packet loss
 
-#### Network Design Notes
+### Network Design Notes
 
 All three machines have been tested for connectivity on the "192.168.56.0/24" lab network. The diagram represents the tested logical connectivity. Confirm each VM's VirtualBox adapter configuration before treating the diagram as a verified physical or virtual adapter layout.
