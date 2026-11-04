@@ -1,19 +1,19 @@
-Network Topology — Project 02
+# Network Topology — Project 02
 
-1. Overview
+### 1. Overview
 
 This document describes the virtual network architecture used for the Network Reconnaissance and Vulnerability Assessment project.
 
 The lab was configured using Oracle VirtualBox with a Host-Only network to allow communication between the security testing machine and the intentionally vulnerable target.
 
-2. Network Configuration
+### 2. Network Configuration
 
 Network Address: "192.168.56.0/24"
 Subnet Mask: "255.255.255.0"
 Network Type: Host-Only
 Virtualisation Platform: Oracle VirtualBox
 
-Device Information
+#### Device Information
 
 |Device| Operating System| IP Address| Role|
 |--|--|--|--|
@@ -21,7 +21,7 @@ Device Information
 |Target Machine| Metasploitable2| 192.168.56.102| Vulnerability assessment target|
 
 
-3. Network Topology Diagram
+### 3. Network Topology Diagram
 ```mermaid
 flowchart TB
     H["Physical Host Computer"]
@@ -36,11 +36,11 @@ flowchart TB
     P -->|Nmap scans| M
 ```
 
-4. Communication Flow
+### 4. Communication Flow
 
 The Parrot OS machine served as the scanning machine, while Metasploitable2 served as the assessment target.
 
-Communication followed this process:
+#### Communication followed this process:
 
 1. Parrot OS initiated network discovery within the host-only subnet.
 2. The target machine was identified at "192.168.56.102".
@@ -48,23 +48,24 @@ Communication followed this process:
 4. Service and version detection identified services running on open ports.
 5. Vulnerability detection scripts examined the target for potential security weaknesses.
 
-5. Network Connectivity
+### 5. Network Connectivity
 
 The following connectivity checks were performed during the lab setup:
 
-Source| Destination| Test| Result
-Parrot OS| Metasploitable2| ICMP Ping| Successful
+|Source| Destination| Test| Result|
+|--|--|--|--|
+|Parrot OS| Metasploitable2| ICMP Ping| Successful|
 
 This confirmed that the scanning machine could communicate with the target over the lab network.
 
-6. Security Considerations
+### 6. Security Considerations
 
 - The lab uses an isolated Host-Only network.
 - Metasploitable2 is intentionally vulnerable and should not be exposed to public networks.
 - Vulnerability testing was restricted to the authorised lab target.
 - Network isolation helps prevent accidental exposure of vulnerable services.
 
-7. Conclusion
+### 7. Conclusion
 
 The VirtualBox Host-Only network provided a controlled environment for conducting network reconnaissance and vulnerability assessment.
 
