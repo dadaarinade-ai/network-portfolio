@@ -22,26 +22,20 @@ Device Information
 
 3. Network Topology Diagram
 
-             VIRTUALBOX ENVIRONMENT
+            flowchart TB
+    H["Physical Host Computer"]
+    V["Oracle VirtualBox"]
+    N["Host-Only Network<br/>192.168.56.0/24"]
 
-        HOST-ONLY NETWORK
-          192.168.56.0/24
-                  |
-          +-------+-------+
-          |               |
-          |               |
-    +-----------+   +----------------+
-    | Parrot OS |   | Metasploitable2|
-    |           |   |                |
-    | .56.103   |   | .56.102        |
-    |           |   |                |
-    | Nmap      |-->| Target for     |
-    | Scanner   |   | Assessment     |
-    +-----------+   +----------------+
-          |
-          |
-    Host machine
-    (VirtualBox)
+    P["Parrot OS<br/>192.168.56.103<br/>Nmap Scanner"]
+    M["Metasploitable2<br/>192.168.56.102<br/>Assessment Target"]
+
+    H --- V
+    V --- N
+    N --- P
+    N --- M
+
+    P -->|"Nmap scans"| M
 
 4. Communication Flow
 
