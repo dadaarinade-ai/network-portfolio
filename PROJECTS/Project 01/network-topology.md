@@ -1,10 +1,10 @@
-Project 01: Network Topology
+## Project 01: Network Topology
 
 
 
 
 
-## 3. Network Topology Diagram
+### Network Topology Diagram
 
 ```mermaid
 flowchart TB
@@ -22,19 +22,6 @@ flowchart TB
     N --- P
     N --- M
 ```
-
-Network Diagram
-
-          VIRTUALBOX LAB NETWORK
-             192.168.56.0/24
-                     |
-        +------------+------------+
-        |            |            |
-        Windows VM    Parrot OS    Metasploitable2
-        .104           .103          .102
-        |            |            |
-        +------------+------------+
-             Host-Only Network
 
 IP Addressing
 
