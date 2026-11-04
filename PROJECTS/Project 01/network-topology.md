@@ -1,10 +1,10 @@
-## Project 01: Network Topology
+# Project 01: Network Topology
 
 
 
 
 
-# Network Topology Diagram
+### Network Topology Diagram
 
 ```mermaid
 flowchart TB
