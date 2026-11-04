@@ -2,8 +2,8 @@
 
 Project Documentation
 
-- "Network Topology Diagram" (network-topology.md)
-- "Screenshots" (Screenshots/)
+- [Network Topology Diagram](network-topology.md)
+- [Screenshots](Screenshots/)
 
 
 ### Objective
