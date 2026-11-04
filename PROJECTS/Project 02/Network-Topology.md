@@ -31,7 +31,8 @@ flowchart TB
     V --> N
     N --- P
     N --- M
-    P -->|Nmap scans| M```
+    P -->|Nmap scans| M
+```
 
 4. Communication Flow
 
