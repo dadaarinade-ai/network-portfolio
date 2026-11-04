@@ -4,7 +4,7 @@
 
 
 
-### Network Topology Diagram
+## Network Topology Diagram
 
 ```mermaid
 flowchart TB
@@ -23,7 +23,7 @@ flowchart TB
     N --- M
 ```
 
-# IP Addressing
+### IP Addressing
 
 | Machine| IPv4 Address| Purpose |
 | :--|:--|:--|
