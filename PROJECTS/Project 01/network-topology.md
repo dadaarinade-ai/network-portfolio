@@ -1,5 +1,28 @@
 Project 01: Network Topology
 
+
+
+
+
+## 3. Network Topology Diagram
+
+```mermaid
+flowchart TB
+    H["Physical Host Computer"]
+    V["Oracle VirtualBox"]
+    N["Host-Only Network<br/>192.168.56.0/24"]
+
+    W["Windows VM<br/>192.168.56.104"]
+    P["Parrot OS<br/>192.168.56.103"]
+    M["Metasploitable2<br/>192.168.56.102"]
+
+    H --> V
+    V --> N
+    N --- W
+    N --- P
+    N --- M
+```
+
 Network Diagram
 
           VIRTUALBOX LAB NETWORK
