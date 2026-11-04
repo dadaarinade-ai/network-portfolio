@@ -1,4 +1,4 @@
-**Vulnerability Assessment Report**
+# Vulnerability Assessment Report
 
 |Project 02 — Network Reconnaissance and Vulnerability Assessment|
 |--|
@@ -12,7 +12,7 @@
 
 ---
 
-1. **Executive Summary**
+### 1. Executive Summary
 
 A network-based vulnerability assessment was conducted against a Metasploitable2 virtual machine using Nmap's vulnerability detection scripts.
 
@@ -24,9 +24,9 @@ These findings demonstrate how vulnerable services, outdated software, and insec
 
 Remediation and further validation are recommended.
 
-2. **Assessment Scope**
+### 2. Assessment Scope
 
-2.1 Target Information
+##### 2.1 Target Information
 
 |Parameter| Details|
 |--|--|
@@ -38,7 +38,7 @@ Remediation and further validation are recommended.
 |Scanner IP| 192.168.56.103|
 |Assessment Tool| Nmap 7.93|
 
-2.2 Assessment Boundaries
+##### 2.2 Assessment Boundaries
 
 The assessment was restricted to the Metasploitable2 virtual machine within an isolated VirtualBox laboratory network.
 
@@ -52,7 +52,7 @@ The assessment focused on:
 
 No external systems were included in the assessment.
 
-3. **Assessment Methodology**
+### 3. Assessment Methodology
 
 The following Nmap command was used:
 
@@ -64,9 +64,9 @@ Scan duration: Approximately 327.94 seconds.
 
 The scan output was reviewed to identify vulnerability indicators, affected services, and supporting evidence.
 
-4. **Detailed Vulnerability Findings**
+### 4. Detailed Vulnerability Findings
 
-Finding 1: vsFTPd 2.3.4 Backdoor
+#### Finding 1: vsFTPd 2.3.4 Backdoor
 
 Affected Port: 21/TCP
 Service: FTP
@@ -75,13 +75,13 @@ Associated CVE: CVE-2011-2523
 Nmap Result: VULNERABLE (Exploitable)
 Suggested Severity: Critical
 
-Description
+**Description**
 
 Nmap identified a backdoor vulnerability associated with vsFTPd version 2.3.4.
 
 The vulnerability is associated with a compromised distribution of the software that can allow an attacker to obtain unauthorized command execution.
 
-Evidence
+**Evidence**
 
 The Nmap scan returned:
 
@@ -89,13 +89,13 @@ uid=0(root) gid=0(root)
 
 This indicates that the command executed by the detection script returned root-level privileges.
 
-Potential Impact
+**Potential Impact**
 
 - Unauthorized remote command execution.
 - Privileged access to the target system.
 - Potential compromise of system confidentiality, integrity, and availability.
 
-Recommended Remediation
+**Recommended Remediation**
 
 - Remove the vulnerable software version.
 - Install a trusted, supported FTP service version if FTP is required.
@@ -103,176 +103,176 @@ Recommended Remediation
 - Restrict access to file-transfer services using firewall rules.
 - Review system logs for suspicious activity.
 
-Validation
+**Validation**
 
 Repeat service detection and vulnerability checks after remediation to confirm that the vulnerable version and backdoor exposure are no longer present.
 
 ---
 
-Finding 2: UnrealIRCd Backdoor Indicator
+#### Finding 2: UnrealIRCd Backdoor Indicator
 
 Affected Port: 6667/TCP
 Service: IRC
 Nmap Result: Backdoor indicator reported
 Suggested Severity: High
 
-Description
+**Description**
 
 The assessment identified a backdoor indicator associated with the UnrealIRCd service.
 
 A backdoor in an IRC service can potentially allow unauthorized users to execute commands on the affected system.
 
-Potential Impact
+**Potential Impact**
 
 - Unauthorized remote access.
 - Remote command execution.
 - Potential compromise of the target machine.
 
-Recommended Remediation
+**Recommended Remediation**
 
 - Verify the installed UnrealIRCd version and software integrity.
 - Remove or replace compromised software.
 - Disable the IRC service if it is not required.
 - Restrict access to the service through firewall rules.
 
-Validation
+**Validation**
 
 Repeat service detection and the relevant vulnerability checks after remediation.
 
 ---
 
-Finding 3: SSL POODLE and Weak Diffie-Hellman Configuration
+#### Finding 3: SSL POODLE and Weak Diffie-Hellman Configuration
 
-Affected Ports:
+**Affected Ports:**
 
 - 25/TCP — SMTP
 - 5432/TCP — PostgreSQL
 
-Nmap Findings: SSL POODLE and weak Diffie-Hellman indicators
+**Nmap Findings**: SSL POODLE and weak Diffie-Hellman indicators
 Suggested Severity: Medium to High, pending configuration validation
 
-Description
+**Description**
 
 Nmap reported SSL POODLE and weak Diffie-Hellman configuration findings on the identified services.
 
 POODLE is associated with weaknesses in SSL 3.0. Weak Diffie-Hellman configurations can reduce the security of encrypted connections.
 
-Potential Impact
+**Potential Impact**
 
 - Reduced confidentiality of encrypted communications.
 - Increased exposure to cryptographic attacks.
 - Potential compromise of sensitive information under vulnerable conditions.
 
-Recommended Remediation
+**Recommended Remediation**
 
 - Disable SSL 3.0 and other obsolete protocols.
 - Configure supported TLS versions.
 - Use strong Diffie-Hellman parameters and secure cipher suites.
 - Review the cryptographic configurations of SMTP and PostgreSQL.
 
-Validation
+**Validation**
 
 Use appropriate SSL/TLS assessment tools and repeat the relevant Nmap checks to verify the configurations.
 
 ---
 
-Finding 4: OpenSSL CCS Injection
+#### Finding 4: OpenSSL CCS Injection
 
 Affected Port: 5432/TCP
 Service: PostgreSQL
 Nmap Finding: OpenSSL CCS Injection
 Suggested Severity: High, pending validation
 
-Description
+**Description**
 
 Nmap reported an OpenSSL ChangeCipherSpec (CCS) Injection vulnerability indicator on the PostgreSQL service.
 
 This vulnerability is associated with certain vulnerable OpenSSL implementations and can affect the security of encrypted connections.
 
-Potential Impact
+**Potential Impact**
 
 - Potential compromise of encrypted communications.
 - Reduced security of TLS sessions.
 - Exposure of sensitive information under affected conditions.
 
-Recommended Remediation
+**Recommended Remediation**
 
 - Identify the installed OpenSSL version.
 - Upgrade affected OpenSSL components to a supported, patched version.
 - Review PostgreSQL TLS configuration.
 - Restart affected services after applying security updates.
 
-Validation
+**Validation**
 
 Verify the installed OpenSSL version and repeat the relevant vulnerability checks.
 
 ---
 
-Finding 5: Slowloris Denial-of-Service Exposure
+#### Finding 5: Slowloris Denial-of-Service Exposure
 
 Affected Port: 80/TCP
 Service: HTTP
 Nmap Finding: Slowloris exposure
 Suggested Severity: Medium
 
-Description
+**Description**
 
 The Nmap scan reported potential exposure to Slowloris, an application-layer denial-of-service technique.
 
 Slowloris attempts to exhaust web-server connection resources by maintaining incomplete HTTP requests.
 
-Potential Impact
+**Potential Impact**
 
 - Exhaustion of available server connections.
 - Reduced web-server performance.
 - Denial of service to legitimate users.
 
-Recommended Remediation
+**Recommended Remediation**
 
 - Apply appropriate web-server updates.
 - Configure connection and request timeouts.
 - Implement connection limits.
 - Use suitable reverse-proxy or web application protection controls.
 
-Validation
+**Validation**
 
 Review the web-server configuration and conduct authorised testing to verify its resilience.
 
 ---
 
-Finding 6: Exposed Java RMI Registry
+#### Finding 6: Exposed Java RMI Registry
 
 Affected Port: 1099/TCP
 Service: Java RMI Registry
 Nmap Finding: Exposed service identified
 Suggested Severity: Requires further assessment
 
-Description
+**Description**
 
 The scan identified a Java RMI registry accessible on port 1099.
 
 Remote Method Invocation allows Java applications to communicate with remote objects. An exposed or poorly configured RMI registry can increase the attack surface.
 
-Potential Impact
+**Potential Impact**
 
 - Unauthorized interaction with remote services.
 - Exposure of application functionality.
 - Potential remote exploitation depending on configuration and implementation.
 
-Recommended Remediation
+**Recommended Remediation**
 
 - Disable the RMI service if it is unnecessary.
 - Restrict access to trusted hosts.
 - Apply appropriate authentication and security controls.
 - Review the application's RMI configuration.
 
-Validation
+**Validation**
 
 Review the service configuration and perform further authorised security testing.
 
 ---
 
-5. Risk Prioritisation
+#### 5. Risk Prioritisation
 
 The following table provides preliminary remediation priorities based on the potential impact of the reported findings.
 
@@ -287,8 +287,8 @@ The following table provides preliminary remediation priorities based on the pot
 
 Risk assessment note: These are preliminary qualitative priorities, not formally calculated CVSS scores. Final severity should consider exploitability, exposure, asset importance, and validated technical evidence.
 
-6. Remediation and Verification Plan
-
+#### 6. Remediation and Verification Plan
+i
 |Finding| Recommended Action| Verification|
 |--|--|--|
 |vsFTPd backdoor| Replace vulnerable software| Repeat version and vulnerability scans|
@@ -298,7 +298,7 @@ Risk assessment note: These are preliminary qualitative priorities, not formally
 |Slowloris| Apply web-server protections| Review configuration and test resilience|
 |Java RMI| Restrict or disable unnecessary access| Review configuration and access controls|
 
-7. Assessment Limitations
+### 7. Assessment Limitations
 
 The following limitations apply:
 
@@ -308,7 +308,7 @@ The following limitations apply:
 4. The assessment did not include a complete manual penetration test.
 5. The findings are limited to the target and configuration observed during the assessment.
 
-8. Conclusion
+### 8. Conclusion
 
 The vulnerability assessment identified multiple security weaknesses within the Metasploitable2 environment.
 
@@ -318,7 +318,7 @@ Other findings highlighted weaknesses in encrypted communication, potentially vu
 
 The assessment demonstrates the importance of regular vulnerability scanning, service management, secure configuration, and timely software updates.
 
-9. Evidence References
+### 9. Evidence References
 
 Supporting screenshots and scan outputs are maintained in the project's "screenshots" directory.
 
@@ -332,7 +332,7 @@ Recommended evidence:
 
 The original vulnerability scan output should also be retained as supporting evidence.
 
-10. Authorization Statement
+### 10. Authorization Statement
 
 This assessment was conducted on an intentionally vulnerable Metasploitable2 virtual machine within a personally configured, isolated VirtualBox laboratory environment.
 
