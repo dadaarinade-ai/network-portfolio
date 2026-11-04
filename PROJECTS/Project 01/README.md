@@ -1,5 +1,11 @@
 # Project 01: Virtual Network Lab Setup and Connectivity Validation
 
+Project Documentation
+
+- "Network Topology Diagram" (network-topology.md)
+- "Screenshots" (Screenshots/)
+
+
 ### Objective
 
 Build and validate an isolated virtual network lab to understand IP addressing, network interfaces, routing, ARP, and connectivity troubleshooting.
