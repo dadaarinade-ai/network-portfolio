@@ -8,8 +8,8 @@ Project 01: Network Topology
 
 ```mermaid
 flowchart TB
-    H["Physical Host Computer"]
-    V["Oracle VirtualBox"]
+    H["Physical Host Computer   "]
+    V["Oracle VirtualBox.     "]
     N["Host-Only Network<br/>192.168.56.0/24"]
 
     W["Windows VM<br/>192.168.56.104"]
