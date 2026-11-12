@@ -147,8 +147,11 @@ Port scanning can help attackers identify:
 Network Security Engineers should investigate unusual scanning activity, identify the source and destination, verify whether the activity is authorised, and escalate suspicious findings according to incident response procedures.
 
 ## 6. Evidence
+Screenshots
+View Screenshots
+Packet Captures
+View Wireshark Packet Captures
 
-Screenshots and packet captures should be stored in the project evidence folder.
 
 Evidence includes:
 
