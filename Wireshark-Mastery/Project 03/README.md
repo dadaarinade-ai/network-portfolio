@@ -68,6 +68,10 @@ Observation:
 
 Finding: HTTP requests can expose readable information because HTTP does not encrypt application data.
 
+Security Finding:HTTP transmits application data without encryption. This means that requests and responses can be captured and read by anyone with access to the network traffic.
+
+During this exercise, the HTTP GET request was visible in Wireshark, demonstrating how unencrypted web communication can expose information to network observers.
+
 #### Exercise 4: DNS Traffic Analysis
 
 Generated DNS queries using:
@@ -136,15 +140,26 @@ Findings:
 The traffic pattern demonstrated TCP port scanning, a reconnaissance technique that can be used to identify exposed services.
 
 ## 5. Security Implications
+##### Security Investigation and Recommended Response
+A port scan is not automatically malicious. It may be performed during authorised vulnerability assessments, network troubleshooting or by an unauthorised individual conducting reconnaissance.
+
+When suspicious scanning activity is detected, a Network Security Engineer should:
+1. Identify the source and destination IP addresses.
+2. Examine the destination ports and number of connection attempts.
+3. Analyse the frequency and pattern of the scanning activity.
+4. Verify whether the activity is authorised.
+5. Document findings and escalate confirmed suspicious activity according to the organisation's incident response procedures.
 
 Port scanning can help attackers identify:
-
 - Open network ports.
 - Running services.
 - Potentially vulnerable services.
 - Possible entry points into a network.
 
 Network Security Engineers should investigate unusual scanning activity, identify the source and destination, verify whether the activity is authorised, and escalate suspicious findings according to incident response procedures.
+
+Investigation Takeaway:
+Network traffic analysis requires examining communication patterns, identifying unusual behaviour and gathering evidence before making security decisions
 
 ## 6. Evidence
 6. Evidence
