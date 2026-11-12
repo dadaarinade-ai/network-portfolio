@@ -147,11 +147,15 @@ Port scanning can help attackers identify:
 Network Security Engineers should investigate unusual scanning activity, identify the source and destination, verify whether the activity is authorised, and escalate suspicious findings according to incident response procedures.
 
 ## 6. Evidence
+6. Evidence
+
 Screenshots
-View /Screenshots
+
+"View Wireshark Screenshots" (https://github.com/dadaarinade-ai/network-portfolio/tree/main/Wireshark-Mastery/Project%2003/Screenshots)
 
 Packet Captures
-View /Wireshark_capture_evidence
+
+"View Wireshark Packet Captures" (https://github.com/dadaarinade-ai/network-portfolio/tree/main/Wireshark-Mastery/Project%2003/Wireshark_capture_evidence)
 
 
 Evidence includes:
