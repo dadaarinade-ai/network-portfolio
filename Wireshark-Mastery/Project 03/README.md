@@ -148,9 +148,10 @@ Network Security Engineers should investigate unusual scanning activity, identif
 
 ## 6. Evidence
 Screenshots
-View Screenshots
+View /Screenshots
+
 Packet Captures
-View Wireshark Packet Captures
+View /Wireshark_capture_evidence
 
 
 Evidence includes:
