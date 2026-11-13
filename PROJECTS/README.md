@@ -1,4 +1,4 @@
-|PROJECTS DONE|TOPIC|LINK|
+|PROJECTS DONE|TOPICS|LINK|
 |--|--|--|
 |Project 01|Virtual network Lab setup and connectivity validation|[P1](https://github.com/dadaarinade-ai/network-portfolio/tree/main/PROJECTS/Project%2001)|
 |Project 02|Network reconnaissance and vulnerability assessment using nmap|[P2](https://github.com/dadaarinade-ai/network-portfolio/tree/main/PROJECTS/Project%2002)|
