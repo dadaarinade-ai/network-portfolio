@@ -63,3 +63,17 @@ These improvements are planned for Project 05.
 - Project_04_IP_Addressing_and_Subnetting.pkt
 - Screenshots/
 - 
+
+## 10. Evidence and Screenshots
+
+### Network Topology
+![Network Topology](Screenshots/01_Network_Topology.png)
+
+### IP Configuration
+- [Administration PC](Screenshots/02_ADMIN_IP_Configuration.png)
+- [IT PC](Screenshots/03_IT_IP_Configuration.png)
+- [Sales PC](Screenshots/04_SALES_IP_Configuration.png)
+
+### Connectivity Testing
+- [Successful Administration Gateway Ping](Screenshots/05_Gateway_Ping_Test.png)
+- [Inter-Subnet Connectivity Test](Screenshots/06_Inter_Subnet_Ping_Test.png)
