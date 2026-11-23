@@ -1,0 +1,13 @@
+```mermaid
+flowchart TD
+    R["Company Router / Firewall"]
+    L3["Layer 3 Core Switch"]
+
+    R --> L3
+
+    L3 --> A["Administration<br/>192.168.10.0/26<br/>Gateway: .1"]
+    L3 --> I["IT Department<br/>192.168.10.64/26<br/>Gateway: .65"]
+    L3 --> S["Sales Department<br/>192.168.10.128/26<br/>Gateway: .129"]
+
+    L3 -.-> ACL["Inter-network access policies"]
+```
