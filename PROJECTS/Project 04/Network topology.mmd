@@ -1,12 +1,11 @@
-
 flowchart TD
-    R["Company Router<br/> / Firewall"]
-    L3["Layer 3<br/> Core Switch"]
+    A[Company Router<br/>192.168.10.1/26] --- B[Company Switch]
+    B --- C[ADMIN-PC<br/>192.168.10.10/26]
+    B --- D[IT-PC<br/>192.168.10.70/26]
+    B --- E[SALES-PC<br/>192.168.10.140/26]
 
-    R --> L3
+    C --- F[Administration Network<br/>192.168.10.0/26]
+    D --- G[IT Network<br/>192.168.10.64/26]
+    E --- H[Sales Network<br/>192.168.10.128/26]
 
-    L3 --> A["Administration<br/>192.168.10.0/26<br/>Gateway: .1"]
-    L3 --> I["IT Department<br/>192.168.10.64/26<br/>Gateway: .65"]
-    L3 --> S["Sales Department<br/>192.168.10.128/26<br/>Gateway: .129"]
-
-    L3 -.-> ACL["Inter-network access policies"]
+    I[Reserved Network<br/>192.168.10.192/26]
