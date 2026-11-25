@@ -66,13 +66,13 @@ These improvements are planned for Project 05.
 ## 10. Evidence and Screenshots
 
 ### Network Topology
-- [Network Topology](https://github.com/dadaarinade-ai/network-portfolio/blob/main/PROJECTS/Project%2004/Evidence/Screenshots/project_04%20topology.png.png)
+- [Network Topology](https://github.com/dadaarinade-ai/network-portfolio/blob/main/PROJECTS/Project%2004/Evidence/Screenshots/project_04%20topology.png)
 
 ### IP Configuration
-- [Administration PC](https://github.com/dadaarinade-ai/network-portfolio/blob/main/PROJECTS/Project%2004/Evidence/Screenshots/ADMIN_IP_CONFIG.png.png)
-- [IT PC](https://github.com/dadaarinade-ai/network-portfolio/blob/main/PROJECTS/Project%2004/Evidence/Screenshots/IT_IP_Configuration.png.png)
-- [Sales PC](https://github.com/dadaarinade-ai/network-portfolio/blob/main/PROJECTS/Project%2004/Evidence/Screenshots/SALES_IP_Configuration.png.png)
+- [Administration PC](https://github.com/dadaarinade-ai/network-portfolio/blob/main/PROJECTS/Project%2004/Evidence/Screenshots/ADMIN_IP_CONFIG.png)
+- [IT PC](https://github.com/dadaarinade-ai/network-portfolio/blob/main/PROJECTS/Project%2004/Evidence/Screenshots/IT_IP_Configuration.png)
+- [Sales PC](https://github.com/dadaarinade-ai/network-portfolio/blob/main/PROJECTS/Project%2004/Evidence/Screenshots/SALES_IP_Configuration.png)
 
 ### Connectivity Testing
-- [Successful Administration Gateway Ping](https://github.com/dadaarinade-ai/network-portfolio/blob/main/PROJECTS/Project%2004/Evidence/Screenshots/ADMIN_Gateway_ping_test.png.png)
-- [Inter-Subnet Connectivity Test](https://github.com/dadaarinade-ai/network-portfolio/blob/main/PROJECTS/Project%2004/Evidence/Screenshots/inter_subnet_ping_test.png.png)
+- [Successful Administration Gateway Ping](https://github.com/dadaarinade-ai/network-portfolio/blob/main/PROJECTS/Project%2004/Evidence/Screenshots/ADMIN_Gateway_ping_test.png)
+- [Inter-Subnet Connectivity Test](https://github.com/dadaarinade-ai/network-portfolio/blob/main/PROJECTS/Project%2004/Evidence/Screenshots/inter_subnet_ping_test.png)
