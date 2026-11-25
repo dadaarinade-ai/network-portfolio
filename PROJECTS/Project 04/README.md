@@ -77,5 +77,4 @@ These improvements are planned for Project 05.
 - [Successful Administration Gateway Ping](https://github.com/dadaarinade-ai/network-portfolio/blob/main/PROJECTS/Project%2004/Evidence/Screenshots/ADMIN_Gateway_ping_test.png)
 - [Inter-Subnet Connectivity Test](https://github.com/dadaarinade-ai/network-portfolio/blob/main/PROJECTS/Project%2004/Evidence/Screenshots/inter_subnet_ping_test.png)
 
-### [Packet Tracer Simulation]
-(https://github.com/dadaarinade-ai/network-portfolio/tree/main/PROJECTS/Project%2004/Evidence/Cisco%20packets%20tracer%20simulation)
+### [Packet Tracer Simulation](https://github.com/dadaarinade-ai/network-portfolio/tree/main/PROJECTS/Project%2004/Evidence/Cisco%20packets%20tracer%20simulation)
