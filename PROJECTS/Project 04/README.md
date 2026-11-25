@@ -78,4 +78,4 @@ These improvements are planned for Project 05.
 - [Inter-Subnet Connectivity Test](https://github.com/dadaarinade-ai/network-portfolio/blob/main/PROJECTS/Project%2004/Evidence/Screenshots/inter_subnet_ping_test.png)
 
 ### [Packet Tracer Simulation]
-(Evidence/Cisco%20packets%20tracer%20simulation/Project_04_IP_Addressing_and_Subnetting.pkt)
+(https://github.com/dadaarinade-ai/network-portfolio/tree/main/PROJECTS/Project%2004/Evidence/Cisco%20packets%20tracer%20simulation)
