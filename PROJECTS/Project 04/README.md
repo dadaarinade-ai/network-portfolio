@@ -70,10 +70,10 @@ These improvements are planned for Project 05.
 -[Network Topology](https://github.com/dadaarinade-ai/network-portfolio/blob/main/PROJECTS/Project%2004/Evidence/Screenshots/project_04%20topology.png.png)
 
 ### IP Configuration
-- [Administration PC](Screenshots/02_ADMIN_IP_Configuration.png)
-- [IT PC](Screenshots/03_IT_IP_Configuration.png)
-- [Sales PC](Screenshots/04_SALES_IP_Configuration.png)
+- [Administration PC](https://github.com/dadaarinade-ai/network-portfolio/blob/main/PROJECTS/Project%2004/Evidence/Screenshots/ADMIN_IP_CONFIG.png.png)
+- [IT PC](https://github.com/dadaarinade-ai/network-portfolio/blob/main/PROJECTS/Project%2004/Evidence/Screenshots/IT_IP_Configuration.png.png)
+- [Sales PC](https://github.com/dadaarinade-ai/network-portfolio/blob/main/PROJECTS/Project%2004/Evidence/Screenshots/SALES_IP_Configuration.png.png)
 
 ### Connectivity Testing
-- [Successful Administration Gateway Ping](Screenshots/05_Gateway_Ping_Test.png)
-- [Inter-Subnet Connectivity Test](Screenshots/06_Inter_Subnet_Ping_Test.png)
+- [Successful Administration Gateway Ping](https://github.com/dadaarinade-ai/network-portfolio/blob/main/PROJECTS/Project%2004/Evidence/Screenshots/ADMIN_Gateway_ping_test.png.png)
+- [Inter-Subnet Connectivity Test](https://github.com/dadaarinade-ai/network-portfolio/blob/main/PROJECTS/Project%2004/Evidence/Screenshots/inter_subnet_ping_test.png.png)
