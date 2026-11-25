@@ -58,16 +58,15 @@ The Administration router gateway (192.168.10.1/26) was configured and successfu
 These improvements are planned for Project 05.
 
 ## 9. Project Files
+- Evidence
 - IP_Address_Allocation_Table.md
 - Network_Topology.mmd
-- Project_04_IP_Addressing_and_Subnetting.pkt
-- Screenshots/
-- 
+- README.md
 
 ## 10. Evidence and Screenshots
 
 ### Network Topology
--[Network Topology](https://github.com/dadaarinade-ai/network-portfolio/blob/main/PROJECTS/Project%2004/Evidence/Screenshots/project_04%20topology.png.png)
+- [Network Topology](https://github.com/dadaarinade-ai/network-portfolio/blob/main/PROJECTS/Project%2004/Evidence/Screenshots/project_04%20topology.png.png)
 
 ### IP Configuration
 - [Administration PC](https://github.com/dadaarinade-ai/network-portfolio/blob/main/PROJECTS/Project%2004/Evidence/Screenshots/ADMIN_IP_CONFIG.png.png)
