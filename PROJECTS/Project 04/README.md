@@ -35,6 +35,10 @@ A /26 subnet provides 62 usable IP addresses, leaving 29 spare addresses per dep
 The IT and Sales gateway addresses are planned addresses. Only the Administration gateway has been configured and tested in the current simulation.
 
 ## 5. Packet Tracer Implementation
+### Implementation Scope
+
+This project focuses on subnet design and IP address allocation. The three department subnets are represented in the logical addressing plan; however, VLAN separation and inter-subnet routing have not yet been configured in Packet Tracer. These will be implemented in Project 05.
+
 The network was modeled in Cisco Packet Tracer using a Cisco 1841 router, an Ethernet switch, and three PCs.
 
 Configured PC addresses:
