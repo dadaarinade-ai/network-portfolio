@@ -20,12 +20,19 @@ Subnet mask: 255.255.255.192 (/26)
 
 Each /26 subnet provides 62 usable host addresses.
 
-| Department | Network/CIDR | Gateway | Usable Range | Broadcast |
-|---|---|---|---|---|
-| Administration | 192.168.10.0/26 | 192.168.10.1 | 192.168.10.1–192.168.10.62 | 192.168.10.63 |
-| IT | 192.168.10.64/26 | 192.168.10.65 | 192.168.10.65–192.168.10.126 | 192.168.10.127 |
-| Sales | 192.168.10.128/26 | 192.168.10.129 | 192.168.10.129–192.168.10.190 | 192.168.10.191 |
-| Reserved | 192.168.10.192/26 | N/A | 192.168.10.193–192.168.10.254 | 192.168.10.255 |
+| Department | Network/CIDR | Gateway | Usable Range | Broadcast | Required IPs | Usable IPs | Spare IPs |
+|---|---|---|---|---|---:|---:|---:|
+| Administration | 192.168.10.0/26 | 192.168.10.1 | 192.168.10.1–192.168.10.62 | 192.168.10.63 | 33 | 62 | 29 |
+| IT | 192.168.10.64/26 | 192.168.10.65 | 192.168.10.65–192.168.10.126 | 192.168.10.127 | 33 | 62 | 29 |
+| Sales | 192.168.10.128/26 | 192.168.10.129 | 192.168.10.129–192.168.10.190 | 192.168.10.191 | 33 | 62 | 29 |
+| Reserved | 192.168.10.192/26 | N/A | 192.168.10.193–192.168.10.254 | 192.168.10.255 | 0 | 62 | 62 |
+
+
+Each department requires 33 IP addresses: 30 for computers, 2 for printers, and 1 for the default gateway.
+
+A /26 subnet provides 62 usable IP addresses, leaving 29 spare addresses per department for future expansion.
+
+The IT and Sales gateway addresses are planned addresses. Only the Administration gateway has been configured and tested in the current simulation.
 
 ## 5. Packet Tracer Implementation
 The network was modeled in Cisco Packet Tracer using a Cisco 1841 router, an Ethernet switch, and three PCs.
