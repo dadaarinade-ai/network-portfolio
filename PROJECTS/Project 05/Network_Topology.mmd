@@ -1,0 +1,19 @@
+
+flowchart TD
+    R["COMPANY-ROUTER<br/>Cisco 1841"]
+
+    S["SWITCH<br/>802.1Q Trunk"]
+
+    R -->|"Fa0/0 ↔ Gi0/1<br/>Trunk"| S
+
+    S -->|"Fa0/2 — VLAN 10"| A["ADMIN-PC<br/>192.168.10.10"]
+    S -->|"Fa0/3 — VLAN 20"| I["IT-PC<br/>192.168.10.70"]
+    S -->|"Fa0/4 — VLAN 30"| SA["SALES-PC<br/>192.168.10.140"]
+
+    R --- R10["Fa0/0.10<br/>Gateway: 192.168.10.1"]
+    R --- R20["Fa0/0.20<br/>Gateway: 192.168.10.65"]
+    R --- R30["Fa0/0.30<br/>Gateway: 192.168.10.129"]
+
+    ACL["Extended ACL: SALES-RESTRICTION<br/>Blocks Sales → Administration"]
+
+    R30 --- ACL
